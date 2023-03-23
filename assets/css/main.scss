@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: black;
+}
+
+
+.d-flex{
+display: flex;
+}
+
+.hero_height{
+    width: 540px;
+    height: 100%;
+}
