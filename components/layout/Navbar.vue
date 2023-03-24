@@ -17,7 +17,7 @@
       </ul>
     </div>
       </div>
-      <div class="flex">
+      <div class="flex items-center">
         <div class="relative mr-8">
           <div class="absolute inset-y-0 left-0 flex items-center">
             <img
@@ -32,7 +32,7 @@
             placeholder="Search"
           />
         </div>
-        <div class="mr-14 ">
+        <div class="mr-14">
           <img src="../../assets/img/hamburger_icon.svg" />
         </div>
       </div>
