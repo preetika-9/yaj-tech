@@ -2,16 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    background-color: black;
+body {
+  background-color: black;
 }
 
-
-.d-flex{
-display: flex;
+.d-flex {
+  display: flex;
 }
 
-.hero_height{
-    width: 540px;
-    height: 856px;
+.hero_height {
+  width: 540px;
+  height: 856px;
+}
+
+.bg_color {
+  background-color: #1b96b8;
+}
+
+.bg_black{
+    background-color: #081316;
+}
+
+.bg_white{
+    background-color: #FFFFFF;
+}
+
+.line_height{
+  line-height: 32px;
+}
+
+.font_500{
+  font-weight: 500;
+}
+.font_700{
+  font-weight: 700;
+}
+
+.text_20{
+  font-size: 1.25;
+}
+.text_27{
+  font-size: 1.875rem;
+}
+
+.text_24{
+  font-size: 1.125rem;
 }

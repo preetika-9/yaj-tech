@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white">
+  <div class="bg_white">
     <div class="mr-14 ml-14">
       <div class="pb-24 d-flex items-center">
         <img
@@ -8,7 +8,14 @@
         />
         <p class="text-6xl">How we work</p>
       </div>
-      
+      <div>
+        <div class="flex justify-center pb-24">
+          <img src="../assets/img/graph_&_detail_group_1679807997.svg" />
+        </div>
+        <div>
+          <HowWeWorkCarousel />
+        </div>
+      </div>
     </div>
   </div>
 </template>

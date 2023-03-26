@@ -2,14 +2,14 @@
   <div class="">
     <div class="grid md:grid-cols-4 lg:grid-cols-4">
       <div
-        class="block max-w-sm rounded-lg bg_color card"
+        class="block max-w-sm rounded-lg bg_colors card"
         v-for="ci in cardItem"
       >
         <div class="py-3 px-6 dark:border-neutral-600 dark:text-neutral-50">
           <div class="d-flex justify-between items-center pt-4">
-            <p class="text-lg font-medium">{{ ci.number }}</p>
+            <p class="text-lg font_500">{{ ci.number }}</p>
             <div class="d-flex items-center">
-              <p class="pr-4 text-lg font-medium">View more</p>
+              <p class="pr-4 text-lg font_500">View more</p>
               <img src="../assets/img/arrow_icon.svg" />
             </div>
           </div>
@@ -21,7 +21,7 @@
           />
         </div>
         <div
-          class="text-3xl font-medium leading-8 py-3 px-6 dark:border-neutral-600 dark:text-neutral-50"
+          class="text-3xl font_500 leading-8 py-3 px-6 dark:border-neutral-600 dark:text-neutral-50"
         >
           <p>{{  ci.label }}</p>
         </div>
@@ -58,7 +58,7 @@ const cardItem = ref([
   height: 400px;
 }
 
-.bg_color{
+.bg_colors{
   background-color: #F2F9FF;
 }
 </style>

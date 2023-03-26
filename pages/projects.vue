@@ -16,7 +16,7 @@
         </div>
         <div class="pl-20">
           <p class="text-white text-xl font-semibold pb-4">Pocket Sports</p>
-          <p class="text-white font-medium text-xl">
+          <p class="text-white font_500 text-xl">
             We started our journey with the idea of creating<br />
             innovative products,
           </p>
@@ -29,7 +29,7 @@
           <img
             src="../assets/img/arrow_icon (1).svg"
             alt="see more"
-            class="pl-4"
+            class="6"
           />
         </div>
       </div>
