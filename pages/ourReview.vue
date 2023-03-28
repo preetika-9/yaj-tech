@@ -39,8 +39,16 @@
             </div>
           </div>
         </div>
-        <div>
+        <div class="relative">
             <img src="../assets/img/review 1.svg" ref="review">
+            <img
+      src="../assets/img/arrow_icon (3).svg"
+      class="prev absolute top-1/2 -left-24 transform -translate-y-1/2 py-2 px-4 z-10"
+    />
+    <img
+      src="../assets/img/arrow_icon (4).svg"
+      class="next absolute top-1/2 right-48 transform -translate-y-1/2 py-2 px-4 z-10"
+    />
         </div>
       </div>
     </div>

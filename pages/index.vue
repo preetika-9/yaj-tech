@@ -40,7 +40,7 @@
 
 <script setup>
 import HowWeWork from "./howWeWork.vue";
-import Services from "./services.vue";
+import Services from "../components/OurServices.vue";
 import Projects from "./projects.vue";
 import ToolsTechnology from "./tools&technology.vue";
 import ForWhom from "./forWhom.vue";

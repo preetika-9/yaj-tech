@@ -25,7 +25,7 @@
 
       <div class="grid md:grid-cols-4 lg:grid-cols-6 pt-16 pl-6 " >
         <div class="d-flex items-center" v-for="sm in seeMore">
-          <p class="text-white">{{ sm.label }}</p>
+          <p class="text-white pr-4">{{ sm.label }}</p>
           <img
             src="../assets/img/arrow_icon (1).svg"
             alt="see more"

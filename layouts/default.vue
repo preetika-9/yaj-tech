@@ -2,6 +2,7 @@
   <div>
     <LayoutNavbar />
     <slot />
+    <!-- <Map/> -->
     <LayoutFooter />
   </div>
 </template>

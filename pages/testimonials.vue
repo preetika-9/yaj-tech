@@ -5,7 +5,7 @@
         <img src="../assets/img/circle.svg" class="pr-2 h-6 w-6 text-red-500" />
         <p class="text-6xl text-white">Testimonials</p>
       </div>
-      <div class="grid-1 grid md:grid-cols-2 lg:grid-cols-3 items-center ">
+      <div class="grid-1 grid md:grid-cols-2 lg:grid-cols-3 items-center">
         <div v-for="p in peoples" class="mr-20 ml-20">
           <div class="d-flex items-center pb-10">
             <img

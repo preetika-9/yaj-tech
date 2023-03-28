@@ -9,12 +9,13 @@
         <p class="text-6xl">How we work</p>
       </div>
       <div>
-        <div class="flex justify-center pb-24">
+        <div class="flex justify-center pb-24 relative">
           <img src="../assets/img/graph_&_detail_group_1679807997.svg" />
-        </div>
-        <div>
+          <div class="absolute right-72 top-72">
           <HowWeWorkCarousel />
         </div>
+        </div>
+        
       </div>
     </div>
   </div>
