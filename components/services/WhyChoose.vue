@@ -5,7 +5,7 @@
         <div>
           <div class="py-24 d-flex">
             <img
-              src="../assets/img/circle.svg"
+              src="../../assets/img/circle.svg"
               class="pr-2 h-6 w-6 text-red-500"
             />
             <p class="text-6xl text-white">
@@ -21,7 +21,7 @@
         </div>
 
         <div class="right-image">
-          <img src="../assets/img/img.svg" alt="image" />
+          <img src="../../assets/img/img.svg" alt="image" />
         </div>
       </div>
     </div>

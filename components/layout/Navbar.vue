@@ -8,14 +8,16 @@
         <NuxtLink to="/" class="font-bold ml-14"
           ><img src="../../assets/img/logo.svg" alt="company logo"
         /></NuxtLink>
-        <div class="d-flex gap-9">
-          <ul class="d-flex text-white" v-for="nl in navList">
+        <div class="d-flex gap-9 ">
+          <ul class="d-flex text-white" v-for="nl in navList" :key="nl.id" >
             <li>
-              <NuxtLink to="/" class="flex items-center"
-                ><img
-                  src="../../assets/img/circle.svg"
-                  class="pr-2 h-4 w-4"
-                />{{ nl.label }}</NuxtLink
+              <NuxtLink :to="nl.to" class="flex items-center"
+                >
+
+                <CommonIcon name="circle"></CommonIcon>
+
+                &nbsp; {{ nl.label }}
+                </NuxtLink
               >
             </li>
           </ul>
@@ -97,4 +99,6 @@ const textColor = computed(() => {
   z-index: 9999999;
   width: 100%;
 }
+
+
 </style>

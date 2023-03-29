@@ -2,7 +2,7 @@
   <div class="bg_white">
     <div class="mr-14">
       <div class="d-flex items-center">
-        <img src="../assets/img/pattern.svg" />
+        <img src="../../assets/img/pattern.svg" />
         <div class="ml-96 mr-80">
           <p class="text-lg leading-8 pb-6">
             <b>With 18 years of experience in enterprise </b> <br />application

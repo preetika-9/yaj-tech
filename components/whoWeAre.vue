@@ -1,12 +1,8 @@
 <template>
   <div class="bg_white">
     <div class="mr-14 ml-14">
-      <div class="pb-10 d-flex items-center">
-        <img
-          src="../assets/img/circle1.svg"
-          class="pr-2 h-6 w-6 text-red-500"
-        />
-        <p class="text-6xl">Who we are</p>
+      <div class="pb-10 ">
+        <DynamicTitles :title="title"/>
       </div>
 
       <div
@@ -58,6 +54,8 @@ const lists = ref([
   { number: "150+", label: "Strong designers & developers" },
   { number: "8-10", label: "Weels project take with development" },
 ]);
+
+const title = ref("Who we are")
 </script>
 
 <style lang="scss" scoped>

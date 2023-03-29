@@ -1,14 +1,15 @@
 <template>
     <div>
-        <ServicesLandingPage/>
+        <LandingPage  :title="title"/>
        <OurServices/>
        <ContactUs/>
     </div>
 </template>
 
 <script setup>
-import ContactUs from '../contactUs.vue';
-
+import OurServices from '~~/components/services/OurServices.vue';
+import ContactUs from '../../components/contactUs.vue';
+const title = ref("Services that we serve");
 
 </script>
 

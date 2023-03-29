@@ -1,15 +1,14 @@
 <template>
   <div class="bg_color">
     <div class="mr-14 ml-14 pb-24">
-      <div class="py-24 d-flex items-center">
-        <img src="../assets/img/circle.svg" class="pr-2 h-6 w-6 text-red-500" />
-        <p class="text-6xl text-white">Projects</p>
+      <div class="py-24 ">
+       <DynamicTitlesWhite :title="title"/>
       </div>
 
       <div class="d-flex items-center">
         <div>
           <img
-            src="../assets/img/project_img.svg"
+            src="../../assets/img/project_img.svg"
             alt="project image"
             class="pl-6"
           />
@@ -27,7 +26,7 @@
         <div class="d-flex items-center" v-for="sm in seeMore">
           <p class="text-white pr-4">{{ sm.label }}</p>
           <img
-            src="../assets/img/arrow_icon (1).svg"
+            src="../../assets/img/arrow_icon (1).svg"
             alt="see more"
             class="6"
           />
@@ -58,6 +57,8 @@ const seeMore = ref([
     label: "Sociar",
   },
 ]);
+
+const title = ref('Projects')
 </script>
 
 <style lang="scss" scoped>

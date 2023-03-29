@@ -2,8 +2,7 @@
   <div class="bg_black">
     <div class="mr-14 ml-14 pb-24">
       <div class="py-24 d-flex items-center">
-        <img src="../assets/img/circle.svg" class="pr-2 h-6 w-6 text-red-500" />
-        <p class="text-6xl text-white">Testimonials</p>
+        <DynamicTitlesWhite :title="title"/>
       </div>
       <div class="grid-1 grid md:grid-cols-2 lg:grid-cols-3 items-center">
         <div v-for="p in peoples" class="mr-20 ml-20">
@@ -46,6 +45,8 @@ const peoples = ref([
       "All you guys are awesome! Thanks for always helping me. Always very nice and friendly.",
   },
 ]);
+
+const title = ref("Testimonials");
 </script>
 
 <style lang="scss" scoped></style>

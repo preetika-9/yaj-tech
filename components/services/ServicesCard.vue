@@ -8,14 +8,14 @@
         <div class="py-3 px-6 dark:border-neutral-600 dark:text-neutral-50">
           <div class="d-flex justify-between items-center pt-4">
             <p class="text-lg font_500">{{ ci.number }}</p>
-            <div class="d-flex items-center">
-              <p class="pr-4 text-lg font_500">View more</p>
-              <img src="../assets/img/arrow_icon.svg" />
-            </div>
+            <NuxtLink :to="ci.to" > <div class="d-flex items-center">
+             <p class="pr-4 text-lg font_500"> View more</p>
+              <img src="../../assets/img/arrow_icon.svg" />
+            </div></NuxtLink>
           </div>
 
           <img
-            src="../assets/img/pattern (2).svg"
+            src="../../assets/img/pattern (2).svg"
             alt="background image"
             class="image"
           />
@@ -35,19 +35,23 @@ const cardItem = ref([
   {
     number: '01',
     label: "Enterprise Solutions",
+    to:'/services/enterprisesolutions'
     
   },
   {
     number: '02',
     label: "Mobility Solutions",
+    to:'/services/mobilitysolutions'
   },
   {
     number: '03',
     label: "Data Solutions",
+    to:'/services/datasolutions'
   },
   {
     number: '04',
     label: " QA & Testing",
+    to:'/services/qatesting'
   },
 ]);
 </script>

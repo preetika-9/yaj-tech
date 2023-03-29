@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <div class="d-flex justify-between">
+  <div>
+    <div class="d-flex justify-between">
       <div class="relative ml-14">
         <p class="text-white text-7xl pt-56 hero_left_div pb-16">
           Code & craft innovation <br />
@@ -25,7 +25,7 @@
 
       <div class="">
         <div
-          class="hero_height bg-gradient-to-t from-teal-900 to-teal-500 relative"
+          class="hero_height  relative"
         >
           <img
             src="../assets/img/hero_img.svg"
@@ -35,15 +35,12 @@
         </div>
       </div>
     </div>
-    </div>
+  </div>
 </template>
 
-<script setup>
-
-</script>
+<script setup></script>
 
 <style lang="scss" scoped>
-
 .hero_left_div {
   line-height: 90px;
 }
@@ -51,4 +48,6 @@
   top: 10rem;
   right: 4rem;
 }
+
+
 </style>

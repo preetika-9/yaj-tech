@@ -3,12 +3,8 @@
     <div class="mr-14 ml-14">
       <div class="grid-1 grid md:grid-cols-2 lg:grid-cols-2 items-center">
         <div>
-          <div class="pb-24  d-flex items-center">
-            <img
-              src="../assets/img/circle.svg"
-              class="pr-2 h-6 w-6 text-red-500"
-            />
-            <p class="text-6xl text-white">Contact US</p>
+          <div class="pb-24  ">
+            <DynamicTitlesWhite :title="title"/>
           </div>
 
           <div class="pl-6 pt-10">
@@ -80,7 +76,9 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+const title = ref("Contact Us");
+</script>
 
 <style lang="scss" scoped>
 .contact_form {

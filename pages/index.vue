@@ -7,7 +7,7 @@
     </div>
 
     <!-- Services -->
-    <Services />
+    <OurServices/>
 
     <!-- how we work -->
     <HowWeWork />
@@ -16,7 +16,7 @@
     <Projects/>
 
     <!-- technologies we use -->
-    <ToolsTechnology/>
+    <Toolstechnology/>
 
     <!-- For whom -->
     <ForWhom/>
@@ -39,16 +39,15 @@
 </template>
 
 <script setup>
-import HowWeWork from "./howWeWork.vue";
-import Services from "../components/OurServices.vue";
-import Projects from "./projects.vue";
-import ToolsTechnology from "./tools&technology.vue";
-import ForWhom from "./forWhom.vue";
-import WhoWeAre from "./whoWeAre.vue";
-import LongTermJourney from "./longTermJourney.vue";
-import Testimonials from "./testimonials.vue";
-import OurReview from "./ourReview.vue";
-import ContactUs from "./contactUs.vue";
+import HowWeWork from "../components/howWeWork.vue";
+import ForWhom from "../components/forWhom.vue";
+import WhoWeAre from "../components/whoWeAre.vue";
+import LongTermJourney from "../components/longTermJourney.vue";
+import Testimonials from "../components/testimonials.vue";
+import OurReview from "../components/ourReview.vue";
+import ContactUs from "../components/contactUs.vue";
+import OurServices from "~~/components/services/OurServices.vue";
+
 </script>
 
 <style lang="scss" scoped></style>

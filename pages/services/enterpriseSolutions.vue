@@ -1,7 +1,7 @@
 <template>
   <div>
-    
-    <ServiceDescription/>
+    <LandingPage :title="title"/>
+   <ServicesServiceDescription/>
     <WhyChoose/>
     <WhatWeOffer />
     <ContactUs />
@@ -9,7 +9,9 @@
 </template>
 
 <script setup>
-import ContactUs from "../contactUs.vue";
+import WhyChoose from '~~/components/services/WhyChoose.vue';
+const title = ref("Enterprise Solutions");
+
 </script>
 
 <style lang="scss" scoped>

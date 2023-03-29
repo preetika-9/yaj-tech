@@ -1,12 +1,8 @@
 <template>
   <div class="bg_white">
     <div class="mr-14 ml-14 pb-24">
-      <div class="py-24 d-flex items-center">
-        <img
-          src="../assets/img/circle1.svg"
-          class="pr-2 h-6 w-6 text-red-500"
-        />
-        <p class="text-6xl">Our review on Marketplaces</p>
+      <div class="py-24 ">
+        <DynamicTitles :title="title" />
       </div>
       <div class="grid-1 grid md:grid-cols-2 lg:grid-cols-2 items-center pl-6">
         <div>
@@ -55,6 +51,8 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+
+const title = ref("Our review on Marketplace")</script>
 
 <style lang="scss" scoped></style>
