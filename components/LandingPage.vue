@@ -3,7 +3,7 @@
     <div class="d-flex justify-between">
       <div class="ml-14 pt-56">
         <SubNav />
-        <p class="text-white text-7xl hero_left_div pb-16 pt-3">
+        <p class="text-white text-6xl hero_left_div pb-16 pt-3">
           {{title}}
         </p>
         <div>

@@ -2,7 +2,7 @@
   <div>
     <div class="d-flex justify-between">
       <div class="relative ml-14">
-        <p class="text-white text-7xl pt-56 hero_left_div pb-16">
+        <p class="text-white text-6xl pt-56 hero_left_div pb-16">
           Code & craft innovation <br />
           empowering technology <br />
           for your business

@@ -13,51 +13,57 @@ body {
 .hero_height {
   width: 540px;
   height: 856px;
-  background: linear-gradient(168.86deg, #B6F3FF -3.07%, #1B96B8 74.97%);
+  background: linear-gradient(168.86deg, #b6f3ff -3.07%, #1b96b8 74.97%);
 }
 
 .bg_color {
   background-color: #1b96b8;
 }
 
-.bg_black{
-    background-color: #081316;
+.bg_black {
+  background-color: #081316;
 }
 
-.bg_white{
-    background-color: #FFFFFF;
+.bg_white {
+  background-color: #ffffff;
 }
 
-.text_white{
-  color: #FFFFFFE5;
-  ;
-}
-.text-primary{
-  color:#1B96B8;
-
+.text_white {
+  color: #ffffffe5;
 }
 
-.line_height{
+.text_gray{
+  color: rgba(255, 255, 255, 0.8);
+}
+.text-primary {
+  color: #1b96b8;
+}
+
+.line_height {
   line-height: 32px;
 }
 
-.font_500{
+.font_500 {
   font-weight: 500;
 }
-.font_700{
+.font_700 {
   font-weight: 700;
 }
-.font_600{
+.font_600 {
   font-weight: 600;
 }
 
-.text_20{
-  font-size: 1.25;
+.text_16{
+  font-size: 1rem;
 }
-.text_27{
+
+.text_20 {
+  font-size: 1.25rem;
+}
+.text_27 {
   font-size: 1.875rem;
 }
 
-.text_24{
+.text_24 {
   font-size: 1.125rem;
 }

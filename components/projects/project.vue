@@ -13,6 +13,8 @@
           </li>
         </ul>
       </div>
+
+      <ProjectsProjectLists/>
     </div>
   </div>
 </template>
