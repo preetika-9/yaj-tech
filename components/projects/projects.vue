@@ -1,7 +1,7 @@
 <template>
   <div class="bg_color">
     <div class="mr-14 ml-14 pb-24">
-      <div class="py-24 ">
+      <div class="pt-24 pb-16">
        <DynamicTitlesWhite :title="title"/>
       </div>
 

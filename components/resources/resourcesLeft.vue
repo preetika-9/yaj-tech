@@ -32,7 +32,7 @@
           </div>
         </div>
       </div>
-<!-- read next -->
+      <!-- read next -->
       <div class="pt-10">
         <p class="text_black font_500 text-xl">Read next:</p>
         <div class="d-flex pt-4" v-for="rl in readNextList">
@@ -45,91 +45,97 @@
           </div>
         </div>
       </div>
-
+      <!-- tags -->
       <div class="pt-10">
         <p class="text_black font_500 text-xl">Tags:</p>
         <nav class="w-full rounded-md">
-            <ol class="pt-2 list-reset d-flex flex-wrap  text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600">
-              <li>
-                <a
-                  href="#"
-                  class="text-black transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
-                  >WebApp</a
-                >
-              </li>
-              <li>
-                <span class="mx-2 text-black dark:text-neutral-400"
-                  >/</span
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="text-black transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
-                  >Apps</a
-                >
-              </li>
-              <li>
-                <span class="mx-2 text-black dark:text-neutral-400"
-                  >/</span
-                >
-              </li>
+          <ol
+            class="pt-2 list-reset d-flex flex-wrap text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
+          >
+            <li>
+              <a
+                href="#"
+                class="text-black transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
+                >WebApp</a
+              >
+            </li>
+            <li>
+              <span class="mx-2 text-black dark:text-neutral-400">/</span>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-black transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
+                >Apps</a
+              >
+            </li>
+            <li>
+              <span class="mx-2 text-black dark:text-neutral-400">/</span>
+            </li>
 
-              <li>
-                <a
-                  href="#"
-                  class="text-black transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
-                  >Software</a
-                >
-              </li>
-              <li>
-                <span class="mx-2 text-black dark:text-neutral-400"
-                  >/</span
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="text-black transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
-                  >UI/UX</a
-                >
-              </li>
-              <li>
-                <span class="mx-2 text-black dark:text-neutral-400"
-                  >/</span
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="text-black transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
-                  >Web</a
-                >
-              </li>
-              <li>
-                <span class="mx-2 text-black dark:text-neutral-400"
-                  >/</span
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="text-black transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
-                  >Computer</a
-                >
-              </li>
-              
-            </ol>
-          </nav>
+            <li>
+              <a
+                href="#"
+                class="text-black transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
+                >Software</a
+              >
+            </li>
+            <li>
+              <span class="mx-2 text-black dark:text-neutral-400">/</span>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-black transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
+                >UI/UX</a
+              >
+            </li>
+            <li>
+              <span class="mx-2 text-black dark:text-neutral-400">/</span>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-black transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
+                >Web</a
+              >
+            </li>
+            <li>
+              <span class="mx-2 text-black dark:text-neutral-400">/</span>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-black transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
+                >Computer</a
+              >
+            </li>
+          </ol>
+        </nav>
       </div>
 
       <!-- instagram -->
 
       <div class="pt-10">
         <p class="text_black font_500 text-xl">Instagram:</p>
-        <button class="rounded-lg bg-[#418BD2] px-4 py-1.5 ml-20 mt-4 text-white text-sm">
-              Follow on Instagram
-            </button>
+        <div class="">
+          <button
+            class="rounded-lg bg-[#418BD2] px-4 py-1.5 ml-20 mt-4 text-white text-sm d-flex items-center"
+          >
+            <CommonIcon name="instagramWhite" class="mr-4"></CommonIcon>
+            Follow on Instagram
+          </button>
+        </div>
+      </div>
+
+      <!-- follow us -->
+      <div class="pt-10">
+        <p class="text_black font_500 text-xl">Follow us:</p>
+        <div class="d-flex pt-4">
+          <CommonIcon name="facebook" class="pr-7"></CommonIcon>
+          <CommonIcon name="instagramBlack" class="pr-7"></CommonIcon>
+          <CommonIcon name="twitter" class="pr-7"></CommonIcon>
+        </div>
       </div>
     </div>
   </div>
@@ -179,7 +185,7 @@ const readNextList = ref([
 <style lang="scss" scoped>
 .left-card {
   width: 400px;
-  height: 1108px;
+  height: 1115px;
 
   background: #ffffff;
 }

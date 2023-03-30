@@ -3,6 +3,7 @@
 <LandingPage  :title="title"/>
 <Project/>
 <ContactUs/>
+<Map/>
     </div>
 </template>
 

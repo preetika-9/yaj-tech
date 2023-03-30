@@ -5,6 +5,7 @@
     <WhyChoose/>
     <WhatWeOffer />
     <ContactUs />
+    <Map/>
   </div>
 </template>
 

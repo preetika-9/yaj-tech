@@ -21,7 +21,7 @@
         </div>
 
         <div class="right-image">
-          <img src="../../assets/img/img.svg" alt="image" />
+          <img src="../../assets/img/boy.svg" alt="image" />
         </div>
       </div>
     </div>

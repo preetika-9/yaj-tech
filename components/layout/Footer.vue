@@ -1,6 +1,6 @@
 <template>
     <footer
-      class="text-center text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 bg-black lg:text-left pl-8"
+      class="text-center text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 bg-black lg:text-left pl-8 pt-16"
     >
       <div class="mx-6 py-10 text-center md:text-left">
         <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-5">
@@ -19,7 +19,7 @@
               </p>
             </div>
             <p class="mb-4" v-for="fl in footerLeft">
-              <a href="#!" class="text-white">{{ fl.label }}</a>
+              <NuxtLink :to="`{{ fl.to }}`" class="text-white">{{ fl.label }}</NuxtLink>
             </p>
             
           </div>
@@ -32,8 +32,8 @@
                 Quick Links
               </p>
             </div>
-            <p class="mb-4" v-for="fl in footerLeft">
-              <NuxtLink :to="`{{ fl.to }}`" class="text-white">{{ fl.label }}</NuxtLink>
+            <p class="mb-4" v-for="fr in footerRight">
+              <NuxtLink :to="`{{ fr.to }}`" class="text-white">{{ fr.label }}</NuxtLink>
             </p>
             
           </div>
@@ -47,12 +47,12 @@
               </p>
             </div>
             <div class="flex">
-              <NuxtLink to="/"
+              <NuxtLink to="https://www.facebook.com/yajtechnologies/"
                 ><img
                   src="../../assets/img/facebook_icon.svg"
                   class="pr-2 h-9 w-9"
               /></NuxtLink>
-              <NuxtLink to="/"
+              <NuxtLink to="https://np.linkedin.com/company/yajtech"
                 ><img
                   src="../../assets/img/instagram_icon.svg"
                   class="pr-2 h-9 w-9"
@@ -84,28 +84,28 @@
           <div>
             <div class="flex"></div>
             <p class="mb-4">
-              <a
-                href="#!"
+              <NuxtLink
+                to="/"
                 class="font-semibold text-grey underline decoration-solid"
                 >Term & Conditions
-              </a>
+              </NuxtLink>
             </p>
           </div>
           <div class="">
             <p class="mb-4">
-              <a
-                href="#!"
+              <NuxtLink
+                to="/"
                 class="font-semibold text-grey underline decoration-solid"
-                >Privacy Policy</a
+                >Privacy Policy</NuxtLink
               >
             </p>
           </div>
           <div class="">
             <p class="mb-4">
-              <a
-                href="#!"
+              <NuxtLink
+                to="/"
                 class="font-semibold text-grey underline decoration-solid"
-                >Cookies Preferences</a
+                >Cookies Preferences</NuxtLink
               >
             </p>
           </div>
@@ -127,16 +127,20 @@
 <script setup>
 const footerLeft = ref([
     {
-        label:"Hybrid Cloud"
+        label:"Hybrid Cloud",
+        to:'/hybridcloud'
     },
     {
-        label:"Artificial Intelligence"
+        label:"Artificial Intelligence",
+        to:'artificialIntelligence'
     },
     {
-        label:"Quantum Computing"
+        label:"Quantum Computing",
+        to:'quantumcomputing'
     },
     {
-        label:"Science"
+        label:"Science",
+        to:'science'
     },
 ]);
 
@@ -158,6 +162,8 @@ const footerRight = ref([
         to:"/aboutus"
     },
 ])
+
+
 </script>
 
 <style lang="scss" scoped>

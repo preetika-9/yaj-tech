@@ -8,17 +8,14 @@
         <NuxtLink to="/" class="font-bold ml-14"
           ><img src="../../assets/img/logo.svg" alt="company logo"
         /></NuxtLink>
-        <div class="d-flex gap-9 ">
-          <ul class="d-flex text-white" v-for="nl in navList" :key="nl.id" >
+        <div class="d-flex gap-9">
+          <ul class="d-flex text-white" v-for="nl in navList" :key="nl.id">
             <li>
-              <NuxtLink :to="nl.to" class="flex items-center"
-                >
-
+              <NuxtLink :to="nl.to" class="flex items-center">
                 <CommonIcon name="circle"></CommonIcon>
 
                 &nbsp; {{ nl.label }}
-                </NuxtLink
-              >
+              </NuxtLink>
             </li>
           </ul>
         </div>
@@ -47,8 +44,13 @@
           />
         </div>
         <div class="mr-14">
-          <img src="../../assets/img/hamburger_icon_1.svg" v-if="isScrolled" />
-          <img src="../../assets/img/hamburger_icon.svg" v-else />
+          <div v-if="isScrolled" @click="isOpen = !isOpen">
+            <img src="../../assets/img/hamburger_icon_1.svg" />
+          </div>
+          <div v-else  @click="isOpen = !isOpen">
+            <img src="../../assets/img/hamburger_icon.svg" />
+          </div>
+          <LayoutSideMenu  :isOpen="isOpen"/>
         </div>
       </div>
     </nav>
@@ -56,6 +58,7 @@
 </template>
 <script setup>
 import { ref, onMounted, computed } from "vue";
+const isOpen = ref(false)
 const navList = ref([
   {
     label: "Home",
@@ -99,6 +102,4 @@ const textColor = computed(() => {
   z-index: 9999999;
   width: 100%;
 }
-
-
 </style>

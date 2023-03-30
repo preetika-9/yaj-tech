@@ -1,50 +1,29 @@
 <template>
-    <div>
-      <input ref="searchBox" type="text" placeholder="Search for a place" />
-      <ul>
-        <li v-for="place in places" :key="place.place_id">{{ place.name }}</li>
-      </ul>
-    </div>
-  </template>
-  
-  <script>
-  import { defineComponent } from "vue";
-  import { load } from "google-maps-api-loader";  
-  export default defineComponent({
-  name: "Places",
-  data() {
-    return {
-      places: [],
-    };
-  },
-  mounted() {
-    load({
-      apiKey: "YOUR_API_KEY",
-      libraries: ["places"],
-    }).then((google) => {
-      const searchBox = new google.maps.places.SearchBox(this.$refs.searchBox, {
-        types: ["establishment"],
-      });
+  <div class="h-96" ref="mapContainer" >
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.2121154691463!2d85.31763021553427!3d27.710736382790355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1906af60fffb%3A0x5673ff7f98360e14!2sLandmark%20Hotel%20Apartments!5e0!3m2!1sen!2snp!4v1680165046820!5m2!1sen!2snp" width="100%" height="450px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</template>
 
-      searchBox.addListener("places_changed", () => {
-        const places = searchBox.getPlaces();
-        this.places = places;
-      });
+<script lang="ts">
+import { defineComponent, ref, onMounted } from 'vue';
+
+
+export default defineComponent({
+  name: 'Map',
+  setup() {
+    const mapContainer = ref(null);
+
+    onMounted(() => {
+     
     });
-  },
-});
 
-  </script>
-  
-  <style>
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    return { mapContainer };
   }
-  
-  li {
-    margin-bottom: 4px;
-  }
-  </style>
-  
+});
+</script>
+
+<style>
+.map {
+  height: 100%;
+}
+</style>

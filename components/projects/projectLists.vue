@@ -1,9 +1,9 @@
 <template>
     <div>
-  <div class="grid-1 grid md:grid-cols-2 lg:grid-cols-4 items-center pt-12 ">
+  <div class="grid-1 grid md:grid-cols-2 lg:grid-cols-3 items-center pt-12 ">
     <!-- <div class="flex justify-center"> -->
     <div
-      class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700 "
+      class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700 mb-10"
     >
       <NuxtLink to="/projects/ambitionguru">
         <div class="relative">
@@ -36,7 +36,84 @@
       </NuxtLink>
     </div>
 
+
     
+    <div
+      class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700 mb-10"
+    >
+      <NuxtLink to="/projects/project">
+        <div class="relative">
+          <img
+            class="rounded-t-lg"
+            src="../../assets/img/project_card_sports (1).svg"
+            alt="image"
+          />
+         
+        </div>
+      </NuxtLink>
+    </div>
+
+    <div
+      class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700 mb-10"
+    >
+      <NuxtLink to="/projects/project">
+        <div class="relative">
+          <img
+            class="rounded-t-lg"
+            src="../../assets/img/project_card_sociair.svg"
+            alt="image"
+          />
+         
+        </div>
+      </NuxtLink>
+    </div>
+
+    <div
+      class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700 mb-10"
+    >
+      <NuxtLink to="/projects/project">
+        <div class="relative">
+          <img
+            class="rounded-t-lg"
+            src="../../assets/img/project_card_better_clinics (1).svg"
+            alt="image"
+          />
+         
+        </div>
+      </NuxtLink>
+    </div>
+
+    <div
+      class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700 mb-10"
+    >
+      <NuxtLink to="/projects/project">
+        <div class="relative">
+          <img
+            class="rounded-t-lg"
+            src="../../assets/img/project_img.svg"
+            alt="image"
+          />
+         
+        </div>
+      </NuxtLink>
+    </div>
+
+    <div
+      class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700 mb-10"
+    >
+      <NuxtLink to="/projects/project">
+        <div class="relative">
+          <img
+            class="rounded-t-lg"
+            src="../../assets/img/project_card_better_clinics (1).svg"
+            alt="image"
+          />
+         
+        </div>
+      </NuxtLink>
+    </div>
+
+
     <!-- </div> -->
   </div>
   <div class="d-flex justify-center">

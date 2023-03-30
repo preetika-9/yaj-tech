@@ -1,7 +1,7 @@
 <template>
   <div relative>
     <div class="d-flex justify-between">
-      <div class="ml-14 pt-56">
+      <div class="ml-14 pt-56 relative">
         <SubNav />
         <p class="text-white text-6xl hero_left_div pb-16 pt-3">
           {{title}}
@@ -17,13 +17,22 @@
         </button>
       </div>
 
-      <div class="hero_height">
-        <div class="absolute bottom-20 right-0">
+      <div class="">
+        <div
+          class="hero_height  relative "
+        >
+          <img
+            src="../assets/img/service_img 1.svg"
+            alt="hero image"
+            class="absolute img_hero top-40 right-20"
+          />
+          <div class="absolute bottom-20 right-0">
           <CommonIcon name="pattern"></CommonIcon>
+        </div>
         </div>
       </div>
     </div>
-    <div class="absolute bottom-40 left-0 w-full">
+    <div class="absolute bottom-44 left-0 w-full">
       <div class="border-list pb-10 ml-10 mr-14"></div>
       <ServicesList />
     </div>

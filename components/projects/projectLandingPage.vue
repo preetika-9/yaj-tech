@@ -66,9 +66,23 @@
         </div>
       </div>
 
-      <div class="hero_height">
+      <!-- <div class="hero_height">
         <div class="absolute bottom-20 right-0">
           <CommonIcon name="pattern"></CommonIcon>
+        </div>
+      </div> -->
+      <div class="">
+        <div
+          class="hero_height  relative "
+        >
+          <img
+            src="../../assets/img/innovate.svg"
+            alt="hero image"
+            class="absolute img_hero top-40 right-20"
+          />
+          <div class="absolute bottom-20 right-0">
+          <CommonIcon name="pattern"></CommonIcon>
+        </div>
         </div>
       </div>
     </div>

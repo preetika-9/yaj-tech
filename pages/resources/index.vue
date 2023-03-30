@@ -1,7 +1,7 @@
 <template>
-    <div>
+    <div >
 <ResourcesLandingPage/>
-<ResourcesLeft/>
+<ResourcesPage/>
     </div>
 </template>
 

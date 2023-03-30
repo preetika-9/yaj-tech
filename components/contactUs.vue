@@ -3,7 +3,7 @@
     <div class="mr-14 ml-14">
       <div class="grid-1 grid md:grid-cols-2 lg:grid-cols-2 items-center">
         <div>
-          <div class="pb-24  ">
+          <div class="pb-24">
             <DynamicTitlesWhite :title="title"/>
           </div>
 

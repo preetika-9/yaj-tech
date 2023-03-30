@@ -2,7 +2,7 @@
   <div>
     <div class="d-flex justify-between">
       <div class="relative ml-14">
-        <p class="text-white text-6xl pt-56 hero_left_div pb-16">
+        <p class="text-white text-6xl pt-56 hero_left_div pb-20">
           Code & craft innovation <br />
           empowering technology <br />
           for your business
@@ -22,16 +22,45 @@
           </p>
         </div>
       </div>
+      <!-- right section -->
 
-      <div class="">
-        <div
-          class="hero_height  relative"
-        >
-          <img
-            src="../assets/img/hero_img.svg"
-            alt="hero image"
-            class="absolute img_hero"
-          />
+      <div class="hero_height relative">
+        <img
+          src="../assets/img/hero_img.svg"
+          alt="hero image"
+          class="absolute img_hero"
+        />
+        <div class="absolute bottom-20 right-0">
+          <div class="d-flex absolute pr-8 right-0 bottom-0">
+            <img src="../assets/img/shield.svg" alt="images" class="pr-8" />
+            <img
+              src="../assets/img/security_badge.svg"
+              alt="images"
+              class="pr-8"
+            />
+          </div>
+
+          <div
+            class="absolute right-10 bottom-4 left-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
+            data-te-carousel-indicators
+          >
+            <button
+              type="button"
+              data-te-slide-to="0"
+              data-te-carousel-active
+              class="pr-2"
+              aria-current="true"
+            >
+              <CommonIcon name="circle1"></CommonIcon>
+            </button>
+            <button type="button" data-te-slide-to="1" class="pr-2">
+              <CommonIcon name="circleDark"></CommonIcon> 
+            </button>
+            <button type="button" data-te-slide-to="2" class="pr-2">
+              <CommonIcon name="circle1"></CommonIcon> 
+            </button>
+          </div>
+          <CommonIcon name="pattern"></CommonIcon>
         </div>
       </div>
     </div>
@@ -48,6 +77,4 @@
   top: 10rem;
   right: 4rem;
 }
-
-
 </style>

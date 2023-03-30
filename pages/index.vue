@@ -35,16 +35,19 @@
 
     <!-- contact us -->
     <ContactUs/>
+
+    <!-- map -->
+    <Map/>
   </div>
 </template>
 
 <script setup>
-import HowWeWork from "../components/howWeWork.vue";
-import ForWhom from "../components/forWhom.vue";
-import WhoWeAre from "../components/whoWeAre.vue";
-import LongTermJourney from "../components/longTermJourney.vue";
-import Testimonials from "../components/testimonials.vue";
-import OurReview from "../components/ourReview.vue";
+import HowWeWork from "../components/HowWeWork.vue";
+import ForWhom from "../components/ForWhom.vue";
+import WhoWeAre from "../components/WhoWeAre.vue";
+import LongTermJourney from "../components/LongTermJourney.vue";
+import Testimonials from "../components/Testimonials.vue";
+import OurReview from "../components/OurReview.vue";
 import ContactUs from "../components/contactUs.vue";
 import OurServices from "~~/components/services/OurServices.vue";
 
