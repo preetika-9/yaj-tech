@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="d-flex justify-between">
+    <div class="d-flex flex-wrap justify-between">
       <div class="relative ml-14">
         <p class="text-white text-6xl pt-56 hero_left_div pb-20">
           Code & craft innovation <br />

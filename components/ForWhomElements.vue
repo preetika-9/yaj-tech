@@ -2,7 +2,7 @@
     <div class="pl-6">
   <div class="grid-1 grid md:grid-cols-2 lg:grid-cols-5 items-center pb-12 ">
     <div>
-      <p class="text-xl font-semibold">For Startups</p>
+      <p class="text-xl  font-semibold">For Startups</p>
     </div>
 
     <div>

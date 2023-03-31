@@ -9,7 +9,7 @@
         <p class="text-6xl">What we offer?</p>
       </div>
       <div>
-        <div class="offer-section">
+        <div class="offer-section max-w-[1710px] max-h-[330px]">
           <div
             class=" grid md:grid-cols-3 lg:grid-cols-3 items-center"
             
@@ -50,8 +50,8 @@ const lists = ref([
   background-color: #f2fcff;
 }
 .offer-section {
-  height: 330px;
-  width: 1710px;
+  // height: 330px;
+  // width: 1710px;
   background-color: #ffffff;
   border-radius: 24px;
 }

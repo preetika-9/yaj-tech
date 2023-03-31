@@ -2,7 +2,7 @@
   <div class="">
     <div class="grid md:grid-cols-4 lg:grid-cols-4">
       <div
-        class="block max-w-sm rounded-lg bg_colors card"
+        class="block max-w-sm rounded-lg bg_colors card mb-6"
         v-for="ci in cardItem"
       >
         <div class="py-3 px-6 dark:border-neutral-600 dark:text-neutral-50">

@@ -4,7 +4,7 @@
     :class="[bgColor, { 'pt-10': !isScrolled, 'pt-0': isScrolled }]"
   >
     <nav class="mx-auto p-4 d-flex justify-between content-center">
-      <div class="flex items-center gap-80">
+      <div class="d-flex items-center gap-80">
         <NuxtLink to="/" class="font-bold ml-14"
           ><img src="../../assets/img/logo.svg" alt="company logo"
         /></NuxtLink>
@@ -19,10 +19,13 @@
             </li>
           </ul>
         </div>
+
       </div>
-      <div class="flex items-center">
+
+      
+      <div class="flex items-center left-nav">
         <div class="relative mr-8">
-          <div class="absolute inset-y-0 left-0 flex items-center">
+          <div class="absolute inset-y-0 left-0 flex items-center" @click="isSearch = !isSearch">
             <img
               src="../../assets/img/search_icon_1.svg"
               alt="search"
@@ -41,8 +44,11 @@
             type="text"
             placeholder="Search"
             :class="[textColor]"
+            
           />
+          <LayoutSearch :isSearch="isSearch"/>
         </div>
+       
         <div class="mr-14">
           <div v-if="isScrolled" @click="isOpen = !isOpen">
             <img src="../../assets/img/hamburger_icon_1.svg" />
@@ -55,10 +61,17 @@
       </div>
     </nav>
   </header>
+
+
+
+
+
+  
 </template>
 <script setup>
 import { ref, onMounted, computed } from "vue";
 const isOpen = ref(false)
+const isSearch = ref(false)
 const navList = ref([
   {
     label: "Home",

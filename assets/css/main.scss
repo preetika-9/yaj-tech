@@ -12,7 +12,9 @@ body {
 
 .hero_height {
   width: 540px;
+  max-width: 540px;
   height: 856px;
+  max-height: 856px;
   background: linear-gradient(168.86deg, #b6f3ff -3.07%, #1b96b8 74.97%);
 }
 
@@ -70,6 +72,17 @@ body {
 
 .text_24 {
   font-size: 1.125rem;
+}
+
+
+@media screen and (max-width: 600px){
+  .hero_height{
+    display: none;
+  }
+
+  .left-nav{
+    display: none;
+  }
 }
 
 

@@ -79,7 +79,7 @@
 <script setup>
 const title = ref("Contact Us");
 </script>
-
+Contact Us
 <style lang="scss" scoped>
 .contact_form {
   height: 440px;

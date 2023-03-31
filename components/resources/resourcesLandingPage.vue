@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="d-flex justify-between ">
+    <div class="d-flex flex-wrap justify-between ">
       <div class="d-flex justify-between ml-14 pt-56">
         <p class="text-white text-6xl hero_left_div pb-16">Resources</p>
       </div>

@@ -1,6 +1,6 @@
 <template>
   <div relative>
-    <div class="d-flex justify-between">
+    <div class="d-flex flex-wrap justify-between">
       <div class="ml-14 pt-56 relative">
         <SubNav />
         <p class="text-white text-6xl hero_left_div pb-16 pt-3">
