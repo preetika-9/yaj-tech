@@ -1,8 +1,8 @@
 <template>
   <div class="bg_white">
     <div class="mr-14">
-      <div class="d-flex items-center">
-        <img src="../../assets/img/pattern.svg" />
+      <div class="d-flex items-center py-auto">
+        <img src="../../assets/img/pattern.svg" class="pattern-img" />
         <div class="ml-96 mr-80">
           <p class="text-lg leading-8 pb-6">
             <b>With 18 years of experience in enterprise </b> <br />application
@@ -25,4 +25,20 @@
 
 <script setup></script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@media screen and (max-width: 600px) {
+  .pattern-img {
+    display: none;
+  }
+
+  .ml-96 {
+    margin-left: 56px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .mr-80 {
+    margin-right: 0px;
+  }
+}
+</style>

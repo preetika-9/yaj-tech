@@ -3,12 +3,12 @@
     class="navbar"
     :class="[bgColor, { 'pt-10': !isScrolled, 'pt-0': isScrolled }]"
   >
-    <nav class="mx-auto p-4 d-flex justify-between content-center">
-      <div class="d-flex items-center gap-80">
+    <nav class="mx-auto p-4  content-center grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2">
+      <div class=" items-center grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 ">
         <NuxtLink to="/" class="font-bold ml-14"
           ><img src="../../assets/img/logo.svg" alt="company logo"
         /></NuxtLink>
-        <div class="d-flex gap-9">
+        <div class=" grid grid-cols-4">
           <ul class="d-flex text-white" v-for="nl in navList" :key="nl.id">
             <li>
               <NuxtLink :to="nl.to" class="flex items-center">
@@ -23,7 +23,7 @@
       </div>
 
       
-      <div class="flex items-center left-nav">
+      <div class="flex items-center flex-wrap justify-end left-nav">
         <div class="relative mr-8">
           <div class="absolute inset-y-0 left-0 flex items-center" @click="isSearch = !isSearch">
             <img

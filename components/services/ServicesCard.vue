@@ -7,9 +7,9 @@
       >
         <div class="py-3 px-6 dark:border-neutral-600 dark:text-neutral-50">
           <div class="d-flex justify-between items-center pt-4">
-            <p class="text-lg font_500">{{ ci.number }}</p>
+            <p class="sm:text-base md:text-base lg:text-lg xl:text-lg font_500">{{ ci.number }}</p>
             <NuxtLink :to="ci.to" > <div class="d-flex items-center">
-             <p class="pr-4 text-lg font_500"> View more</p>
+             <p class="pr-4 sm:text-base md:text-base lg:text-lg xl:text-lg font_500"> View more</p>
               <img src="../../assets/img/arrow_icon.svg" />
             </div></NuxtLink>
           </div>
@@ -21,7 +21,7 @@
           />
         </div>
         <div
-          class="text-3xl font_500 leading-8 py-3 px-6 dark:border-neutral-600 dark:text-neutral-50"
+          class="sm:text-2xl md:text-2xl lg:text-3xl xl:text-3xl font_500 leading-8 py-3 px-6 dark:border-neutral-600 dark:text-neutral-50"
         >
           <p>{{  ci.label }}</p>
         </div>
@@ -65,4 +65,12 @@ const cardItem = ref([
 .bg_colors{
   background-color: #F2F9FF;
 }
+
+@media screen and (max-width: 600px) {
+  .card {
+  width: 230px;
+  height: 300px;
+}
+}
+
 </style>

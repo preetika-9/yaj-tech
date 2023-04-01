@@ -1,12 +1,12 @@
 <template>
   <div class="bg_color">
-    <div class="mr-14 ml-14 pb-24">
+    <div class="mx-14 pb-24">
       <div class="grid-1 grid md:grid-cols-2 lg:grid-cols-2 items-center">
         <div class="pt-24 pb-16 ">
           <DynamicTitlesWhite :title="title"/>
         </div>
         <div>
-          <p class="text-white text-xl leading-8 font_500 pt-24">
+          <p class="text-white text-xl leading-8 font_500 pt-24 texts">
             We started our <b>journey</b> with the
             <b
               >idea of creating<br />
@@ -36,5 +36,12 @@ const title = ref("Long-term journey");
 <style lang="scss" scoped>
 .year_stat {
   width: 100%;
+}
+@media screen and (max-width: 600px) {
+ .texts{
+padding-top: 15px;
+ }
+
+ 
 }
 </style>

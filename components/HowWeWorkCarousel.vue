@@ -7,9 +7,9 @@
   <div class="carousel relative">
     <div class="slides flex transition-transform duration-500 ease-in-out">
       <div class="slide">
-        <div class="carsouel-card p-7">
+        <div class="carsouel-card p-7 ">
           <p class="text-white font_600 text_27">Elicitation</p>
-          <p class="text-white font_500 text-xl">
+          <p class="text-white font_500 text-xl texts">
             We started our journey with the idea of creating innovative
             products,
           </p>
@@ -18,7 +18,7 @@
     </div>
     <img
       src="../assets/img/arrow_icon (3).svg"
-      class="prev absolute top-1/2 -left-24 transform -translate-y-1/2 py-2 px-4 z-10"
+      class="prev absolute top-1/2 -left-24 arrow-left transform -translate-y-1/2 py-2 px-4 z-10"
     />
     <img
       src="../assets/img/arrow_icon (4).svg"
@@ -90,5 +90,27 @@ export default {
 
 .slide {
   width: 33.33333%; /* Set the width of each slide to 1/3 of the slide container width */
+}
+
+@media screen and (max-width: 600px) {
+  .carsouel-card  {
+  width: 200px;
+  height: 83px;
+  padding: 9px;
+}
+.carousel {
+  width: 300px;
+}
+.arrow-left{
+  padding-left: 3.5rem;
+}
+
+.text_27{
+  font-size: 16px;
+}
+.texts{
+  font-size: 12px;
+  line-height: 14px;
+}
 }
 </style>

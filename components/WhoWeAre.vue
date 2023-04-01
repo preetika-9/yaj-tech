@@ -9,13 +9,13 @@
         class="grid-1 grid md:grid-cols-2 lg:grid-cols-2 items-center pb-12 pl-6"
       >
         <div>
-          <p class="text-xl font_500 leading-8">
+          <p class="sm:text-lg md:text-lg lg:text-xl xl:text-xl font_500 leading-8">
             <b> YAJ Tech </b>has worked with more than <b>1900 business</b>
             <br />(and counting) in the past <b>18 years</b> and we offer our<br />
             experience with best expert talent pool in the<br />
             industry to fulfill all your application development needs.
           </p>
-          <p class="text-xl font_500 pt-6 leading-8">
+          <p class="sm:text-lg md:text-lg lg:text-xl xl:text-xl font_500 pt-6 leading-8">
             We deploy best practices, proven development<br />
             methodologies and <b>time-tested optimum delivery</b> <br />models
             for developing and building application on a<br />
@@ -23,7 +23,7 @@
           </p>
         </div>
         <div class="grid-1 grid  lg:grid-cols-2 " >
-          <div class="boxes mb-8 pt-10" v-for="l in lists" >
+          <div class="boxes mb-8 pt-10 " v-for="l in lists" >
             <p class="text-center text-white font-bold text-2xl">{{ l.number}}</p>
             <p class="text-center text-white text-sm font-normal">{{ l.label }}</p>
           </div>
@@ -31,7 +31,7 @@
         </div>
 
         <div class="d-flex items-center pt-20">
-          <p class="text-xl pr-4 font-bold">Learn More</p>
+          <p class="sm:text-lg md:text-lg lg:text-xl xl:text-xl pr-4 font-bold">Learn More</p>
           <img src="../assets/img/arrow_icon (2).svg" alt="arrow up" />
         </div>
       </div>
@@ -64,5 +64,23 @@ const title = ref("Who we are")
   height: 136px;
   width: 292px;
   border-radius: 16px;
+}
+
+@media screen and (max-width: 600px) {
+  .boxes {
+  background-color: #1b96b8;
+  height: 100px;
+  width: 200px;
+  border-radius: 16px;
+}
+
+.mb-8{
+  margin-bottom: 8px;
+}
+
+.pt-10{
+  padding-top: 15px;
+}
+
 }
 </style>

@@ -3,7 +3,7 @@
     <p class="font_500 text_27">You May Also Like</p>
 
     <div class="grid-1 grid md:grid-cols-2 lg:grid-cols-4 items-center pt-8">
-      <div class="pb-24">
+      <div class="pb-24" v-for="d in details">
         <div class="block max-w-sm rounded-lg bg-white">
           <NuxtLink to="">
             <img class="w-full" src="../../assets/img/img.svg" alt="" />
@@ -18,16 +18,16 @@
                 </button>
               </div>
             </div>
-            <h5
+            <div >
+              <h5
               class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50"
             >
-              Ideas In Software
+              {{ d.title }}
             </h5>
             <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident.
+              {{ d.description }}
             </p>
+            </div>
           </div>
         </div>
       </div>
@@ -46,6 +46,28 @@ const btns = ref([
     name: "Website",
   },
 ]);
+
+const details = ref([
+  {
+    title:'Ideas In Software',
+    description: 'Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecatcupidatat non proident.'
+  },
+  {
+    title:'Ideas In Software',
+    description: 'Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecatcupidatat non proident.'
+  },
+  {
+    title:'Ideas In Software',
+    description: 'Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecatcupidatat non proident.'
+  },
+  {
+    title:'Ideas In Software',
+    description: 'Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecatcupidatat non proident.'
+  },
+  
+
+
+])
 </script>
 
 <style lang="scss" scoped></style>

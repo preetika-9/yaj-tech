@@ -2,7 +2,7 @@
   <div>
     <div class="d-flex flex-wrap justify-between">
       <div class="relative ml-14">
-        <p class="text-white text-6xl pt-56 hero_left_div pb-20">
+        <p class="text-white sm:text-4xl md:text-4xl lg:text-4xl xl:text-6xl pt-56 hero_left_div pb-20">
           Code & craft innovation <br />
           empowering technology <br />
           for your business
@@ -16,7 +16,7 @@
         </div>
 
         <div>
-          <p class="text-white text-xl">
+          <p class="text-white sm:text-xl md:text-xl lg:text-xl xl:text-xl">
             Trusted by over 200 start ups and other business. <br />An agile
             shop for excellence in enterprise solutions.
           </p>

@@ -4,7 +4,7 @@
       <div class="pt-24 pb-16 d-flex items-center">
         <DynamicTitles :title="title" />
       </div>
-      <div class="d-flex gap-20 justify-center">
+      <div class="d-flex gap-20 sm:gap-20 justify-center">
         <ul class="d-flex text-black text-base font_500" v-for="n in navs">
           <li>
             <NuxtLink to="/" class="flex items-center"

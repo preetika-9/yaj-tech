@@ -1,5 +1,5 @@
 <template>
-  <div class="grid md:grid-cols-6 lg:grid-cols-6 pl-12 gap-6">
+  <div class="grid1 grid md:grid-cols-6 lg:grid-cols-6 pl-12 gap-6 sm:gap-6">
     <!-- <div class="d-flex items-center"> -->
 
     <div class="d-flex items-center" v-for="l in list">

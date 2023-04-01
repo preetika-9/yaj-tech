@@ -2,11 +2,9 @@
   <div class="bg-blue">
     <div class="mr-14 ml-14 pb-24">
       <div class="py-24 d-flex items-center">
-        <img
-          src="../assets/img/circle1.svg"
-          class="pr-2 h-6 w-6 text-red-500"
-        />
-        <p class="text-6xl">What we offer?</p>
+        <div class="pb-8">
+        <DynamicTitles :title="title"/>
+      </div>
       </div>
       <div>
         <div class="offer-section max-w-[1710px] max-h-[330px]">
@@ -14,9 +12,9 @@
             class=" grid md:grid-cols-3 lg:grid-cols-3 items-center"
             
           >
-            <div v-for="l in lists" class="px-12 py-12 border-r-2">
-              <p class="text-primary font_600 text-xl pb-4">{{ l.title }}</p>
-              <p class="text-xl">{{ l.description }}</p>
+            <div v-for="l in lists" class="px-12 py-12 ">
+              <p class="text-primary font_600 m:text-lg md:text-lg lg:text-xl xl:text-xl pb-4">{{ l.title }}</p>
+              <p class="m:text-lg md:text-lg lg:text-xl xl:text-xl">{{ l.description }}</p>
             </div>
           </div>
         </div>
@@ -43,6 +41,8 @@ const lists = ref([
       "Automating tasks such as data entry, invoice processing, customer support, marketing, inventory management, and more. By automating these tasks, organizations can increase efficiency, reduce costs, and improve accuracy, as machines are less prone to errors than humans. ",
   },
 ]);
+
+const title = ref("What we Offer");
 </script>
 
 <style lang="scss" scoped>

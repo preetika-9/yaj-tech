@@ -8,7 +8,7 @@
               src="../../assets/img/circle.svg"
               class="pr-2 h-6 w-6 text-red-500"
             />
-            <p class="text-6xl text-white">
+            <p class="sm:text-4xl md:text-4xl lg:text-4xl xl:text-6xl text-white">
               Why choose YAJ Tech <br />for enterprise solutions?
             </p>
           </div>

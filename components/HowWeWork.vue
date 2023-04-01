@@ -7,7 +7,7 @@
       <div>
         <div class="flex justify-center pb-24 relative">
           <img src="../assets/img/graph_&_detail_group_1679807997.svg" />
-          <div class="absolute right-72 top-72">
+          <div class="absolute right-72 top-72 carousel">
             <HowWeWorkCarousel />
           </div>
         </div>
@@ -20,4 +20,11 @@
 const title = ref("How we work");
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@media screen and (max-width: 600px) {
+  .carousel {
+  right: -40px;
+  top:46px;
+}
+}
+</style>

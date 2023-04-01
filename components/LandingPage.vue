@@ -1,9 +1,9 @@
 <template>
-  <div relative>
+  <div class="relative project-herosection">
     <div class="d-flex flex-wrap justify-between">
-      <div class="ml-14 pt-56 relative">
+      <div class="mx-14 pt-56 relative">
         <SubNav />
-        <p class="text-white text-6xl hero_left_div pb-16 pt-3">
+        <p class="text-white sm:text-4xl md:text-4xl lg:text-4xl xl:text-6xl hero_left_div pb-16 pt-3">
           {{title}}
         </p>
         <div>
@@ -32,7 +32,7 @@
         </div>
       </div>
     </div>
-    <div class="absolute bottom-44 left-0 w-full">
+    <div class="absolute bottom-28 left-0 w-full ">
       <div class="border-list pb-10 ml-10 mr-14"></div>
       <ServicesList />
     </div>

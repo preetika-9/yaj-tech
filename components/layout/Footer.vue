@@ -3,7 +3,7 @@
       class="text-center text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 bg-black lg:text-left pl-8 pt-16"
     >
       <div class="mx-6 py-10 text-center md:text-left">
-        <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-5">
+        <div class="grid-1 grid gap-8 sm:gap-8 md:grid-cols-2 lg:grid-cols-5">
           <div>
             <img src="../../assets/img/logo.svg" />
             <p class="text-white pt-4">Build for Tech.</p>
@@ -78,7 +78,7 @@
       </div>
 
       <div class="mx-6 py-10 text-center md:text-left">
-        <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-5">
+        <div class="grid-1 grid gap-8 sm-gap-8 md:grid-cols-2 lg:grid-cols-5">
           <div></div>
 
           <div>
