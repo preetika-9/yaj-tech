@@ -4,8 +4,8 @@
       <div class="pt-24 pb-16 d-flex items-center">
         <DynamicTitles :title="title" />
       </div>
-      <div class="d-flex gap-20 sm:gap-20 justify-center">
-        <ul class="d-flex text-black text-base font_500" v-for="n in navs">
+      <div class="d-flex flex-wrap gap-20 justify-center">
+        <ul class="d-flex  text-black text-base font_500" v-for="n in navs">
           <li>
             <NuxtLink to="/" class="flex items-center"
               >&nbsp; {{ n.label }}
@@ -44,4 +44,10 @@ const navs = ref([
 const title = ref("Projects");
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@media screen and (max-width: 1280px) {
+.gap-20{
+gap: 10px;
+}
+}
+</style>

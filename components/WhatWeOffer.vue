@@ -9,7 +9,7 @@
       <div>
         <div class="offer-section max-w-[1710px] max-h-[330px]">
           <div
-            class=" grid md:grid-cols-3 lg:grid-cols-3 items-center"
+            class=" grid grid-cols-3 md:grid-cols-3 lg:grid-cols-3 items-center"
             
           >
             <div v-for="l in lists" class="px-12 py-12 ">

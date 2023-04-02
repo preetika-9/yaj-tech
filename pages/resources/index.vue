@@ -1,7 +1,9 @@
 <template>
-    <div >
-<ResourcesLandingPage/>
-<ResourcesPage/>
+    <div class="bg_primary_light" >
+<ResourcesNavigation style="position:absolute;"/>
+<div>
+    <ResourcesPage style="padding-top: 400px;" />
+</div>
     </div>
 </template>
 

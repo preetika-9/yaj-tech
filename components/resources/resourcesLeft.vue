@@ -187,6 +187,6 @@ const readNextList = ref([
   width: 400px;
   height: 1115px;
 
-  background: #ffffff;
+  background: #ffffff;  
 }
 </style>

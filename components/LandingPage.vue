@@ -7,7 +7,7 @@
           {{title}}
         </p>
         <div>
-          <p class="text-white text-xl pb-16">
+          <p class="text-white sm:text-lg md:text-lg lg:text-xl xl:text-xl pb-16">
             Trusted by over 200 start ups and other business. <br />An agile
             shop for excellence in enterprise solutions.
           </p>
@@ -32,7 +32,7 @@
         </div>
       </div>
     </div>
-    <div class="absolute bottom-28 left-0 w-full ">
+    <div class="absolute bottom-28 left-0 w-full services-list">
       <div class="border-list pb-10 ml-10 mr-14"></div>
       <ServicesList />
     </div>
@@ -57,5 +57,33 @@ const props = defineProps({
 }
 .border-list {
   border-top: 0.1px solid rgba(255, 255, 255, 0.8);
+}
+@media screen and (max-width: 1280px) {
+.py-4{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+} 
+
+.px-8{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.mb-40{
+  margin-bottom: 14rem;
+}
+
+
+    // display: none;
+    .bottom-28{
+      position: absolute;
+      bottom: 3rem;
+    }
+
+    .border-list {
+      padding-bottom: 14px;
+    }
+  
+
 }
 </style>

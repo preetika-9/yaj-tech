@@ -12,7 +12,7 @@
               Why choose YAJ Tech <br />for enterprise solutions?
             </p>
           </div>
-          <div class="grid md:grid-cols-3 lg:grid-cols-3 items-center">
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 items-center">
             <div class="pb-8 mr-60" v-for="l in lists">
               <p class="text-color pb-2 text-lg">{{ l.number }}</p>
               <p class="text_white text-lg">{{ l.description }}</p>

@@ -1,12 +1,12 @@
 <template>
-  <div class="grid1 grid md:grid-cols-6 lg:grid-cols-6 pl-12 gap-6 sm:gap-6">
+  <div class="grid1 grid grid-cols-3 md:grid-cols-6 lg:grid-cols-6 pl-12 gap-6 sm:gap-6">
     <!-- <div class="d-flex items-center"> -->
 
     <div class="d-flex items-center" v-for="l in list">
       <div
-        class="bg-white text-white w-8 h-8 rounded-full flex justify-center items-center"
+        class="bg-white text-white w-8 h-8 rounded-full flex justify-center items-center num"
       >
-        <p class="text-black">{{ l.number }}</p>
+        <p class="text-black ">{{ l.number }}</p>
       </div>
       <p class="text-white pl-2">{{ l.label }}</p>
     </div>
@@ -45,5 +45,6 @@ const list = ref([
 </script>
 
 <style lang="scss" scoped>
+
 
 </style>

@@ -111,7 +111,7 @@ Contact Us
 @media screen and (max-width: 600px) {
 .pt-10{
 padding-top: 2px;
-}}
+}
 
 .pb-24{
   padding-bottom: 32px;
@@ -120,4 +120,16 @@ padding-top: 2px;
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
+.py-10{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.px-10{
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+}
+
 </style>

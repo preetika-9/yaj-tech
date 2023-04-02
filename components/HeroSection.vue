@@ -77,4 +77,29 @@
   top: 10rem;
   right: 4rem;
 }
+
+@media screen and (max-width: 1280px) {
+.py-4{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+} 
+
+.px-8{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.mb-40{
+  margin-bottom: 2rem;
+}
+
+.py-16{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.pb-20{
+  padding-bottom: 2rem;
+}
+
+}
 </style>

@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div class="d-flex flex-wrap justify-between">
+  <div style="height:90vh;width:100%;" class="bg-black">
+    <div class="d-flex flex-wrap justify-between" style="height: 100%;width: 100%;">
       <div class="d-flex justify-between ml-14 pt-56">
         <p
           class="text-white sm:text-4xl md:text-4xl lg:text-4xl xl:text-6xl hero_left_div pb-16"

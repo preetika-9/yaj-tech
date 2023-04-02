@@ -13,24 +13,24 @@
             alt="image"
           />
           <div class="absolute bottom-0 left-0 p-4">
-            <div class="d-flex">
+            <div class="d-flex flex-wrap">
               <button
-                class="mt-4 mr-2 px-4 py-2 bg-white text-black rounded-full transition duration-500 ease-in-out transform hover:opacity-75 hover:scale-105"
+                class="mt-4 mr-2 px-4 py-2 bg-white text-black rounded-full transition duration-500 ease-in-out transform hover:opacity-75 hover:scale-105 sm:text-xs"
               >
                 Web
               </button>
               <button
-                class="mt-4  mr-2 px-4 py-2 bg-white text-black rounded-full transition duration-500 ease-in-out transform hover:opacity-75 hover:scale-105"
+                class="mt-4  mr-2 px-4 py-2 bg-white text-black rounded-full transition duration-500 ease-in-out transform hover:opacity-75 hover:scale-105 sm:text-xs"
               >
                 Apps
               </button>
               <button
-                class="mt-4 mr-2 px-4 py-2 bg-white text-black rounded-full transition duration-500 ease-in-out transform hover:opacity-75 hover:scale-105"
+                class="mt-4 mr-2 px-4 py-2 bg-white text-black rounded-full transition duration-500 ease-in-out transform hover:opacity-75 hover:scale-105 sm:text-xs"
               >
                 E-commerce
               </button>
             </div>
-            <p class="text-white font_600 text-2xl">Innovative Developing</p>
+            <p class="text-white font_600  sm:text-xl md:text-2xl lg:text-2xl xl:text-2xl">Innovative Developing</p>
           </div>
         </div>
       </NuxtLink>
@@ -124,4 +124,12 @@
 
 <script setup></script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+
+@media screen and (max-width: 1280px) {
+.py{
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+}
+</style>

@@ -20,8 +20,8 @@
           <p class="font_500 text_20">
             Recognized on Clutch as a Top Web Developer In Nepal
           </p>
-          <div class="grid-1 grid md:grid-cols-2 lg:grid-cols-8 pt-10">
-            <div>
+          <div class="grid-1 grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-8 pt-10  ">
+            <div class="img-grid">
               <img src="../assets/img/Mask group.svg" />
             </div>
             <div>
@@ -55,4 +55,27 @@
 
 const title = ref("Our review on Marketplace")</script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+
+@media screen and (max-width: 1280px) {
+
+  .px-12{
+    padding-right: 16px;
+    padding-left: 16px;
+  } 
+  
+  .py-4{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  
+
+  .img-grid{
+    padding-right: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+
+</style>

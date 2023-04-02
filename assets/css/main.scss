@@ -84,7 +84,8 @@ body {
   }
 
   .contact_form {
-    margin-right: 96px;
+    margin-right: 0px;
+    width: 300px;
   }
 
   .project-herosection {
@@ -120,6 +121,15 @@ body {
     top:-25px;
     padding-left: 40px;
   }
+
+  .num{
+    display: none;
+  }
+
+  .right-image{
+    display: none;
+  }
+  
 }
 
 @media screen and (max-width: 1280px) {
