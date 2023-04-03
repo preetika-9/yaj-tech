@@ -49,5 +49,8 @@ const title = ref("Projects");
 .gap-20{
 gap: 10px;
 }
+.mr-14{
+  margin-right: 30px;
+}
 }
 </style>

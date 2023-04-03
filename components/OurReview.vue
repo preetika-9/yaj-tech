@@ -1,6 +1,6 @@
 <template>
   <div class="bg_white">
-    <div class="mx-14  pb-24">
+    <div class="mx-14 pb-24">
       <div class="pt-24 pb-16">
         <DynamicTitles :title="title" />
       </div>
@@ -20,31 +20,33 @@
           <p class="font_500 text_20">
             Recognized on Clutch as a Top Web Developer In Nepal
           </p>
-          <div class="grid-1 grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-8 pt-10  ">
+          <div
+            class="grid-1 grid grid-cols-8 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-8 pt-10"
+          >
             <div class="img-grid">
               <img src="../assets/img/Mask group.svg" />
             </div>
-            <div>
+            <div class="img-grid">
               <img src="../assets/img/Mask group (1).svg" />
             </div>
-            <div>
+            <div class="img-grid">
               <img src="../assets/img/logo_corporate.svg" />
             </div>
-            <div>
+            <div class="img-grid">
               <img src="../assets/img/logo_certified.svg" />
             </div>
           </div>
         </div>
         <div class="relative">
-            <img src="../assets/img/review 1.svg" ref="review">
-            <img
-      src="../assets/img/arrow_icon (3).svg"
-      class="prev absolute top-1/2 -left-24 transform -translate-y-1/2 py-2 px-4 z-10"
-    />
-    <img
-      src="../assets/img/arrow_icon (4).svg"
-      class="next absolute top-1/2 right-48 transform -translate-y-1/2 py-2 px-4 z-10"
-    />
+          <img src="../assets/img/review 1.svg" alt="review" />
+          <img
+            src="../assets/img/arrow_icon (3).svg"
+            class="prev absolute top-1/2 -left-24 transform -translate-y-1/2 py-2 px-4 z-10"
+          />
+          <img
+            src="../assets/img/arrow_icon (4).svg"
+            class="next absolute top-1/2 right-48 transform -translate-y-1/2 py-2 px-4 z-10"
+          />
         </div>
       </div>
     </div>
@@ -52,30 +54,50 @@
 </template>
 
 <script setup>
-
-const title = ref("Our review on Marketplace")</script>
+const title = ref("Our review on Marketplace");
+</script>
 
 <style lang="scss" scoped>
-
-@media screen and (max-width: 1280px) {
-
-  .px-12{
+@media screen and (max-width: 600px) {
+  .px-12 {
     padding-right: 16px;
     padding-left: 16px;
-  } 
-  
-  .py-4{
+  }
+
+  .py-4 {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
   }
 
-  
+  .my-12 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 
-  .img-grid{
-    padding-right: 30px;
-    padding-bottom: 30px;
+  .img-grid {
+    padding-right: 10px;
+    padding-bottom: 20px;
+  }
+
+  .text-xl {
+    font-size: 18px;
+  }
+  .text_20 {
+    font-size: 0.75rem;
+  }
+
+  .pt-10 {
+    padding-top: 1rem;
+  }
+
+  .prev {
+    left: -3rem;
+    height: 40px;
+  }
+
+  .next {
+    right: -3rem;
+    height: 40px;
   }
 }
-
-
 </style>

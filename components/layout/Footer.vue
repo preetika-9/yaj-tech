@@ -3,8 +3,8 @@
     class="text-center text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 bg-black lg:text-left pl-8 pt-16"
   >
     <div class="mx-6 py-10 text-center md:text-left">
-      <div class="grid-1 grid gap-8 sm:gap-8 md:grid-cols-2 lg:grid-cols-5">
-        <div >
+      <div class="grid-1 grid gap-8  sm:gap-8  md:grid-cols-2 lg:grid-cols-5">
+        <div class="">
           <img src="../../assets/img/logo.svg" />
           <p class="text-white pt-4">Build for Tech.</p>
         </div>
@@ -13,37 +13,42 @@
           <div class="flex">
             <img src="../../assets/img/circle.svg" class="pr-2 pt-2 h-5 w-5" />
             <p
-              class="mb-4 flex justify-center font-semibold uppercase md:justify-start text-white sm:text-lg md:text-lg lg:text-xl xl:text-xl"
+              class="mb-4 flex justify-center font-semibold uppercase md:justify-start text-white 
+              text-lg"
             >
               Focus Areas
             </p>
           </div>
-          <p class="mb-4" v-for="fl in footerLeft">
-            <NuxtLink :to="`{{ fl.to }}`" class="text-white">{{
+          <div class="links ">
+            <p class="mb-4 text-base" v-for="fl in footerLeft">
+            <NuxtLink :to="`{{ fl.to }}`" class="text-white ">{{
               fl.label
             }}</NuxtLink>
           </p>
+          </div>
         </div>
         <div class="">
           <div class="flex">
             <img src="../../assets/img/circle.svg" class="pr-2 pt-2 h-5 w-5" />
             <p
-              class="mb-4 flex justify-center font-semibold uppercase md:justify-start text-white sm:text-base md:text-base lg:text-lg xl:text-lg"
+              class="mb-4 flex justify-center font-semibold uppercase md:justify-start text-white text-lg"
             >
               Quick Links
             </p>
           </div>
-          <p class="mb-4" v-for="fr in footerRight">
+          <div class="links ">
+            <p class="mb-4 text-base" v-for="fr in footerRight">
             <NuxtLink :to="`{{ fr.to }}`" class="text-white">{{
               fr.label
             }}</NuxtLink>
           </p>
+          </div>
         </div>
         <div class="">
           <div class="flex">
             <img src="../../assets/img/circle.svg" class="pr-2 pt-2 h-5 w-5" />
             <p
-              class="mb-4 flex justify-center font-semibold uppercase md:justify-start text-white sm:text-base md:text-base lg:text-lg xl:text-lg"
+              class="mb-4 flex justify-center font-semibold uppercase md:justify-start text-white text-lg"
             >
               Social
             </p>
@@ -68,7 +73,7 @@
         </div>
         <div class="relative">
           <p
-            class="mb-4 flex justify-center font-semibold uppercase md:justify-start text-white sm:text-base md:text-base lg:text-lg xl:text-lg"
+            class="mb-4 flex justify-center font-semibold uppercase md:justify-start text-white text-lg"
           >
             Get Our Latest <br />
             News in Your Inbox
@@ -192,6 +197,34 @@ const footerRight = ref([
     padding-bottom: 0.5rem;
   }
 
+  .text-lg{
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .text-base{
+    font-size: 0.75rem;
+    line-height: 0.5rem;
+  }
+
+  .right-20{
+    right: 1rem;
+  }
+
+  .links{
+    display: flex;
+    flex-wrap: wrap;
+   p{
+    padding-right: 9px;
+    padding-bottom: 4px;
+   }
+  }
+
+  .mx-6{
+    margin-left: 0px;
+  }
+
+  
   // .yaj-link{
   //   display: flex;
   // }

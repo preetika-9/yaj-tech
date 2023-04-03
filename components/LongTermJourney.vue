@@ -5,15 +5,15 @@
         <div class="pt-24 pb-16 ">
           <DynamicTitlesWhite :title="title"/>
         </div>
-        <div>
-          <p class="text-white text-xl leading-8 font_500 pt-24 texts">
+        <div class="text-long-term-journey">
+          <p class="text-white text-xl leading-8 font_500 pt-12 texts">
             We started our <b>journey</b> with the
             <b
-              >idea of creating<br />
+              >idea of creating
               innovative products</b
-            >, and we have been following this<br />
+            >, and we have been following this
             trend <b>since 2004</b> and continue to build technological
-            solutions<br />
+            solutions
             for <b>our customers.</b>
           </p>
         </div>
@@ -37,11 +37,31 @@ const title = ref("Long-term journey");
 .year_stat {
   width: 100%;
 }
+
+.text-long-term-journey{
+  width: 90%;
+  height: 126px;
+}
 @media screen and (max-width: 600px) {
  .texts{
 padding-top: 15px;
  }
+.text-xl{
+  font-size: 16px;
+  line-height: 22px;
+}
+.pt-12{
+  padding-top: 0px;
+}
 
+.mx-10{
+margin-left: 0px;
+margin-right: 0px;
+}
+
+.pt-10{
+  padding-top: 25px;
+}
  
 }
 </style>

@@ -6,16 +6,16 @@
       </div>
 
       <div
-        class="grid-1 grid md:grid-cols-2 lg:grid-cols-2 items-center pb-12 pl-6"
+        class="grid-1 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 items-center pb-12 pl-6"
       >
         <div>
-          <p class="sm:text-lg md:text-lg lg:text-xl xl:text-xl font_500 leading-8">
+          <p class="text-xl font_500 leading-8">
             <b> YAJ Tech </b>has worked with more than <b>1900 business</b>
             <br />(and counting) in the past <b>18 years</b> and we offer our<br />
             experience with best expert talent pool in the<br />
             industry to fulfill all your application development needs.
           </p>
-          <p class="sm:text-lg md:text-lg lg:text-xl xl:text-xl font_500 pt-6 leading-8">
+          <p class="text-xl font_500 pt-6 leading-8">
             We deploy best practices, proven development<br />
             methodologies and <b>time-tested optimum delivery</b> <br />models
             for developing and building application on a<br />
@@ -31,15 +31,15 @@
         </div>
 
         <div class="d-flex items-center pt-20">
-          <p class="sm:text-lg md:text-lg lg:text-xl xl:text-xl pr-4 font-bold">Learn More</p>
-          <img src="../assets/img/arrow_icon (2).svg" alt="arrow up" />
+          <p class="text-xl pr-4 font-bold">Learn More</p>
+          <img src="../assets/img/arrow_icon (2).svg" alt="arrow up" class="arrow-up"/>
         </div>
       </div>
 
       <div class="pb-20 grid-1  lg:grid-cols-7">
         <img
           src="https://tecdn.b-cdn.net/img/new/avatars/2.webp"
-          class="w-16 rounded-full"
+          class="w-16 rounded-full profiles"
           alt="Avatar"
         />
       </div>
@@ -69,17 +69,61 @@ const title = ref("Who we are")
 @media screen and (max-width: 600px) {
   .boxes {
   background-color: #1b96b8;
-  height: 100px;
-  width: 200px;
+  height: 70px;
+  width: 100px;
   border-radius: 16px;
+  margin-left: 50px;
 }
 
 .mb-8{
   margin-bottom: 8px;
 }
 
-.pt-10{
+.pt-10 {
   padding-top: 15px;
+}
+.text-xl {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.text-2xl{
+  font-size: 0.875rem;
+  line-height: 1rem;
+}
+
+.text-sm{
+  font-size: 10px;
+  line-height: 15px;
+}
+.pb-12{
+  padding-bottom: 10px;
+}
+
+.pb-20{
+  padding-bottom: 30px;
+}
+
+.pr-4{
+  padding-right: 4px;
+}
+
+.arrow-up{
+  height: 20px;
+  width: 20px;
+}
+
+.profiles{
+  height: 40px;
+  width: 40px;
+}
+
+.mr-14{
+  margin-right: 1rem;
+}
+
+.pt-20{
+  padding-top: 1rem;
 }
 
 }

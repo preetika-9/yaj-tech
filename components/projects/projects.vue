@@ -5,22 +5,22 @@
         <DynamicTitlesWhite :title="title" />
       </div>
 
-      <div class="grid-1 grid md:grid-cols-2 lg:grid-cols-2 items-center">
+      <div class="grid-1 grid md:grid-cols-2 lg:grid-cols-2 items-center projects">
         <div>
           <img
             src="../../assets/img/project_img.svg"
             alt="project image"
-            class="pl-6"
+            class="pl-6 "
           />
         </div>
         <div class="pl-20">
           <p
-            class="text-white sm:text-lg md:text-lg lg:text-xl xl:text-xl font-semibold pb-4"
+            class="text-white text-xl font-semibold pb-4"
           >
             Pocket Sports
           </p>
           <p
-            class="text-white font_500 sm:text-lg md:text-lg lg:text-xl xl:text-xl"
+            class="text-white font_500 text-lg"
           >
             We started our journey with the idea of creating<br />
             innovative products,
@@ -28,13 +28,13 @@
         </div>
       </div>
 
-      <div class="grid md:grid-cols-4 lg:grid-cols-6 pt-16 pl-6">
-        <div class="d-flex items-center" v-for="sm in seeMore">
+      <div class="grid grid-cols-4 md:grid-cols-4 lg:grid-cols-6 pt-16 pl-6">
+        <div class="d-flex items-center list" v-for="sm in seeMore">
           <p class="text-white pr-4">{{ sm.label }}</p>
           <img
             src="../../assets/img/arrow_icon (1).svg"
             alt="see more"
-            class="6"
+            class="project-icons"
           />
         </div>
       </div>
@@ -48,7 +48,7 @@ const seeMore = ref([
     label: "Better clinics",
   },
   {
-    label: "Yahoo Speerts",
+    label: "Yahoo Sports",
   },
   {
     label: "Keep change",
@@ -82,6 +82,25 @@ const title = ref("Projects");
   }
   .pt-16 {
     padding-top: 20px;
+  }
+  .projects{
+    display: flex;
+  }
+  .text-lg{
+    
+    line-height: 20px;
+  }
+  .pr-4{
+    padding-right: 0px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .project-icons{
+    height: 20px;
+    width: 20px;
+  }
+  .list{
+    padding-right: 15px;
   }
   
 }

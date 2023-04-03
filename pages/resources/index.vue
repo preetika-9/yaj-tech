@@ -2,7 +2,7 @@
     <div class="bg_primary_light" >
 <ResourcesNavigation style="position:absolute;"/>
 <div>
-    <ResourcesPage style="padding-top: 400px;" />
+    <ResourcesPage class="resources-page" style="padding-top: 400px;" />
 </div>
     </div>
 </template>
@@ -12,5 +12,9 @@
 </script>
 
 <style lang="scss" scoped>
-
+@media screen and (max-width: 600px) {
+.resources-page{
+    padding-top: 270px !important;
+}
+}
 </style>

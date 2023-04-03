@@ -4,8 +4,8 @@
       <div class="pt-24 pb-16 d-flex items-center">
         <DynamicTitlesWhite :title="title"/>
       </div>
-      <div class="grid-1 grid md:grid-cols-2 lg:grid-cols-3 items-center ">
-        <div v-for="p in peoples" class="mr-20 ml-20">
+      <div class="grid-1 grid md:grid-cols-2 lg:grid-cols-3 items-center cards">
+        <div v-for="p in peoples" class="mx-20 cards">
           <div class="d-flex items-center pb-10">
             <img
               src="https://tecdn.b-cdn.net/img/new/avatars/2.webp"
@@ -51,4 +51,27 @@ const peoples = ref([
 const title = ref("Testimonials");
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@media screen and (max-width: 600px) {
+
+.text-xl{
+font-size: 15px;
+}
+
+.pb-10{
+  padding-bottom: 0px;
+}
+
+.mx-20{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.cards{
+  padding-bottom: 16px;
+}
+.pb-24{
+  padding-bottom: 8px;
+}
+}
+
+</style>

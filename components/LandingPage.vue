@@ -3,11 +3,11 @@
     <div class="d-flex flex-wrap justify-between">
       <div class="mx-14 pt-56 relative">
         <SubNav />
-        <p class="text-white sm:text-4xl md:text-4xl lg:text-4xl xl:text-6xl hero_left_div pb-16 pt-3">
+        <p class="text-white text-6xl hero_left_div pb-16 pt-3">
           {{title}}
         </p>
         <div>
-          <p class="text-white sm:text-lg md:text-lg lg:text-xl xl:text-xl pb-16">
+          <p class="text-white text-xl pb-16">
             Trusted by over 200 start ups and other business. <br />An agile
             shop for excellence in enterprise solutions.
           </p>
@@ -70,7 +70,10 @@ const props = defineProps({
 }
 
 .mb-40{
-  margin-bottom: 14rem;
+  margin-bottom: 10rem;
+}
+.mr-14{
+  margin-right: 25px;
 }
 
 

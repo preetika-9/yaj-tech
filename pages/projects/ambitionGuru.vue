@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ProjectsProjectLandingPage :details="details" />
+    <ProjectsProjectNavigation :details="details" />
     <ProjectsYouMayAlsoLike/>
     <ContactUs />
   </div>

@@ -149,4 +149,6 @@ const textColor = computed(() => {
 }
 
 }
+
+
 </style>

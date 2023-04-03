@@ -130,6 +130,30 @@ padding-top: 2px;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
 }
+.text_27{
+  font-size: 18px;
+}
+
+.text_18{
+  font-size: 14px;
+}
+
+// .btn {
+//   width: 152px;
+//   height: 48px;
+// }
+
+.text-lg{
+  font-size: 10px;
+}
+
+.btn{
+  height: 35px;
+}
+
+// .contact_form{
+// margin-right: 40px;
+// }
 }
 
 </style>

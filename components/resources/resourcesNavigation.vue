@@ -3,7 +3,7 @@
     <div class="d-flex flex-wrap justify-between" style="height: 100%;width: 100%;">
       <div class="d-flex justify-between ml-14 pt-56">
         <p
-          class="text-white sm:text-4xl md:text-4xl lg:text-4xl xl:text-6xl hero_left_div pb-16"
+          class="text-white text-6xl hero_left_div pb-16"
         >
           Resources
         </p>

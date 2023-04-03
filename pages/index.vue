@@ -16,7 +16,7 @@
     <Projects/>
 
     <!-- technologies we use -->
-    <Toolstechnology/>
+    <ToolsTechnology/>
 
     <!-- For whom -->
     <ForWhom/>

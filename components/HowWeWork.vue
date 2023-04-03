@@ -23,8 +23,8 @@ const title = ref("How we work");
 <style lang="scss" scoped>
 @media screen and (max-width: 600px) {
   .carousel {
-  right: -40px;
-  top:46px;
+  right: -25px;
+  top:35px;
 }
 }
 </style>

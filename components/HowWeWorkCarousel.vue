@@ -94,23 +94,23 @@ export default {
 
 @media screen and (max-width: 600px) {
   .carsouel-card  {
-  width: 200px;
-  height: 83px;
-  padding: 9px;
+  width: 115px;
+  height: 60px;
+  padding: 8px;
 }
 .carousel {
-  width: 300px;
+  width: 215px;
 }
 .arrow-left{
   padding-left: 3.5rem;
 }
 
 .text_27{
-  font-size: 16px;
+  font-size: 12px;
 }
 .texts{
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 8px;
+  line-height: 8px;
 }
 }
 </style>

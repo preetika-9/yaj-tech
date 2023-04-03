@@ -2,7 +2,7 @@
   <div class="bg-blue">
     <div class="mr-14 ml-14 pb-24">
       <div class="py-24 d-flex items-center">
-        <div class="pb-8">
+        <div class="">
         <DynamicTitles :title="title"/>
       </div>
       </div>
@@ -13,8 +13,8 @@
             
           >
             <div v-for="l in lists" class="px-12 py-12 ">
-              <p class="text-primary font_600 m:text-lg md:text-lg lg:text-xl xl:text-xl pb-4">{{ l.title }}</p>
-              <p class="m:text-lg md:text-lg lg:text-xl xl:text-xl">{{ l.description }}</p>
+              <p class="text-primary font_600 text-xl pb-4">{{ l.title }}</p>
+              <p class="text-xl">{{ l.description }}</p>
             </div>
           </div>
         </div>
@@ -38,7 +38,7 @@ const lists = ref([
   {
     title: "Enterprise Automation",
     description:
-      "Automating tasks such as data entry, invoice processing, customer support, marketing, inventory management, and more. By automating these tasks, organizations can increase efficiency, reduce costs, and improve accuracy, as machines are less prone to errors than humans. ",
+      "Automating tasks such as data entry, invoice processing, customer support, marketing, inventory management, and more. By automating these tasks, organizations can increase efficiency, reduce costs, and improve accuracy.",
   },
 ]);
 
@@ -54,5 +54,33 @@ const title = ref("What we Offer");
   // width: 1710px;
   background-color: #ffffff;
   border-radius: 24px;
+}
+@media screen and (max-width: 600px) {
+
+.mr-14{
+margin-right: 35px;
+}
+
+.py-12{
+  padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+.text-xl {
+    font-size: 10px;
+    line-height: 10px;
+}
+.px-12 {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+}
+
+.pb-4{
+  padding-bottom: 0.5rem;
+}
+
+.offer-section {
+  padding: 10px;
+}
 }
 </style>

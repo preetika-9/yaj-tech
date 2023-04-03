@@ -2,7 +2,7 @@
   <div class="bg-white pl-14">
     <p class="font_500 text_27">You May Also Like</p>
 
-    <div class="grid-1 grid md:grid-cols-2 lg:grid-cols-4 items-center pt-8">
+    <div class="grid-1 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 items-center pt-8 lists">
       <div class="pb-24" v-for="d in details">
         <div class="block max-w-sm rounded-lg bg-white">
           <NuxtLink to="">
@@ -12,7 +12,7 @@
             <div class="d-flex pb-4">
               <div v-for="b in btns">
                 <button
-                  class="mt-4 mr-2 px-4 py-2 bg-white border-2 border-black text_black rounded-full transition duration-500 ease-in-out transform hover:opacity-75 hover:scale-105"
+                  class="mt-4 mr-2 px-4 py-2 bg-white border-2 border-black text_black  text-sm rounded-full transition duration-500 ease-in-out transform hover:opacity-75 hover:scale-105 btns"
                 >
                   {{ b.name }}
                 </button>
@@ -70,4 +70,39 @@ const details = ref([
 ])
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@media screen and (max-width: 600px) {
+
+// .btns{
+//   height: 10px;
+//   width: 10px;
+// }
+
+.text-sm{
+  font-size: 8px;
+}
+.px-4{
+  padding:2px 6px;
+} 
+.pb-4{
+  padding-bottom: 0.5rem;
+}
+
+.text-xl{
+  font-size: 15px;
+}
+.text-base{
+  font-size: 10px;
+  line-height: 16px;
+}
+
+.pb-24{
+  padding-bottom: 10px;
+}
+.lists{
+  gap: 1rem;
+  padding-right: 30px;
+}
+}
+
+</style>

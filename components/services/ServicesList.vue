@@ -8,7 +8,7 @@
       >
         <p class="text-black ">{{ l.number }}</p>
       </div>
-      <p class="text-white pl-2">{{ l.label }}</p>
+      <p class="text-white pl-2 text-lg">{{ l.label }}</p>
     </div>
     <!-- <p class="text-white pr-4">{{ sm.label }}</p> -->
   </div>
@@ -45,6 +45,16 @@ const list = ref([
 </script>
 
 <style lang="scss" scoped>
+@media screen and (max-width: 600px) {
 
-
+.num{
+    display: none;
+  }
+  .text-lg{
+    font-size: 10px;
+  }
+  .gap-6{
+    gap: 0rem;
+  }
+}
 </style>

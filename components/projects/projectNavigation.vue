@@ -2,7 +2,7 @@
   <div >
     <div class="d-flex flex-wrap justify-between">
       <div class="mx-14 pt-48 project-detail w-1/2" v-for="d in details">
-        <p class="text_white sm:text-4xl md:text-4xl lg:text-4xl xl:text-6xl hero_left_div pb-2 pt-3">
+        <p class="text_white text-6xl hero_left_div pb-2 pt-3">
           {{ d.name }}
         </p>
         <div class="">
@@ -142,8 +142,21 @@ const btns = ref([
   border-top: 0.1px solid rgba(255, 255, 255, 0.8);
 }
 
-// .project-detail {
-//   height: 200px;
-//   width: 675px;
-// }
+@media screen and (max-width: 600px) {
+
+.text-xl{
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.mx-14{
+  margin-right: 0px;
+  padding-bottom: 15px;
+}
+
+.pb-16{
+  padding-bottom: 15px;
+}
+}
+
 </style>

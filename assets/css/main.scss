@@ -85,7 +85,7 @@ body {
 
   .contact_form {
     margin-right: 0px;
-    width: 300px;
+    width: 335px;
   }
 
   .project-herosection {
@@ -122,22 +122,56 @@ body {
     padding-left: 40px;
   }
 
-  .num{
-    display: none;
-  }
+  
 
   .right-image{
     display: none;
   }
+
+  .project-detail {
+    width: 70%;
+  }
+
+  .text-6xl{
+    font-size: 24px;
+  }
+  .text-xl{
+    font-size: 20px;
+  }
+
+  .text-lg{
+    font-size: 14px;
+  }
+
+  .text-4xl{
+    font-size: 24px;
+  }
+  .text-3xl{
+    font-size: 20px;
+  }
+  .ml-8{
+    margin-left: 0px;
+  }
+  .ml-14{
+    margin-left: 2.5rem;
+  }
+  .mx-14{
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+
+  .pl-6{
+    padding-left: 0px;
+  }
   
 }
 
-@media screen and (max-width: 1280px) {
-  .hero_height {
-    display: none;
-  }
+// @media screen and (max-width: 1280px) {
+//   .hero_height {
+//     display: none;
+//   }
 
-  .left-nav {
-    display: none;
-  }
-}
+//   .left-nav {
+//     display: none;
+//   }
+// }

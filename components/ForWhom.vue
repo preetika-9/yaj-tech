@@ -13,4 +13,11 @@
 const title = ref("For Whom");
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@media screen and (max-width: 600px) {
+
+.mr-14{
+  margin-right: 1rem;
+}
+}
+</style>
