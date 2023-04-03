@@ -103,6 +103,10 @@ const details = ref([
   gap: 1rem;
   padding-right: 30px;
 }
+
+.text_27{
+  font-size: 24px;
+}
 }
 
 </style>

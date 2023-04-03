@@ -7,7 +7,7 @@
           empowering technology <br />
           for your business
         </p>
-        <button class="rounded-lg bg_white py-4 px-8">Get an estimate</button>
+        <NuxtLink to="/pricing">  <button class="rounded-lg bg_white py-4 px-8">Get an estimate</button></NuxtLink>
         <div class="py-16">
           <img src="../assets/img/Union.svg" class="pb-2" />
           <p class="text-white">

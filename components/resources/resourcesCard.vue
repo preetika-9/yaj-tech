@@ -62,7 +62,7 @@
           <div class="d-flex flex-wrap">
             <div v-for="b in btns">
               <button
-                class="mt-4 mr-2 px-4 py-2 bg-white border-2 border-black text_black text-sm rounded-full transition duration-500 ease-in-out transform hover:opacity-75 hover:scale-105"
+                class="mt-4 mr-2 px-4 py-2 bg-white border-2 text_black text-sm rounded-full transition duration-500 ease-in-out transform hover:opacity-75 hover:scale-105"
               >
                 {{ b.name }}
               </button>

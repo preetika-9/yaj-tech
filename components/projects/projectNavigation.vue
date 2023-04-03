@@ -87,8 +87,8 @@
       </div>
     </div>
 
-    <div class="bg_white py-12">
-      <div class="d-flex flex-wrap  justify-between px-20">
+    <div class="bg_white py-12 ">
+      <div class="d-flex   justify-between px-20 footer">
         <div class="d-flex flex-wrap items-center font_500 text_16">
           <CommonIcon name="leftArrow"></CommonIcon>
           <a
@@ -138,9 +138,9 @@ const btns = ref([
 .img_hero {
   width: 540px;
 }
-.border-list {
-  border-top: 0.1px solid rgba(255, 255, 255, 0.8);
-}
+// .border-list {
+//   border-top: 0.1px solid rgba(255, 255, 255, 0.8);
+// }
 
 @media screen and (max-width: 600px) {
 
@@ -157,6 +157,15 @@ const btns = ref([
 .pb-16{
   padding-bottom: 15px;
 }
+.footer{
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+.px-20{
+    padding-right: 0px;
+    padding-left: 0px;
+  }
 }
 
 </style>

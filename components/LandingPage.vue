@@ -4,7 +4,7 @@
       <div class="mx-14 pt-56 relative">
         <SubNav />
         <p class="text-white text-6xl hero_left_div pb-16 pt-3">
-          {{title}}
+          {{ title }}
         </p>
         <div>
           <p class="text-white text-xl pb-16">
@@ -12,23 +12,23 @@
             shop for excellence in enterprise solutions.
           </p>
         </div>
-        <button class="rounded-lg bg_white py-4 px-8 mb-40">
-          Get an estimate
-        </button>
+        <NuxtLink to="/pricing">
+          <button class="rounded-lg bg_white py-4 px-8 mb-40">
+            Get an estimate
+          </button></NuxtLink
+        >
       </div>
 
       <div class="">
-        <div
-          class="hero_height  relative "
-        >
+        <div class="hero_height relative">
           <img
             src="../assets/img/service_img 1.svg"
             alt="hero image"
             class="absolute img_hero top-40 right-20"
           />
           <div class="absolute bottom-20 right-0">
-          <CommonIcon name="pattern"></CommonIcon>
-        </div>
+            <CommonIcon name="pattern"></CommonIcon>
+          </div>
         </div>
       </div>
     </div>
@@ -59,34 +59,31 @@ const props = defineProps({
   border-top: 0.1px solid rgba(255, 255, 255, 0.8);
 }
 @media screen and (max-width: 1280px) {
-.py-4{
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-} 
+  .py-4 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
 
-.px-8{
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
+  .px-8 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 
-.mb-40{
-  margin-bottom: 10rem;
-}
-.mr-14{
-  margin-right: 25px;
-}
+  .mb-40 {
+    margin-bottom: 10rem;
+  }
+  .mr-14 {
+    margin-right: 25px;
+  }
 
+  // display: none;
+  .bottom-28 {
+    position: absolute;
+    bottom: 3rem;
+  }
 
-    // display: none;
-    .bottom-28{
-      position: absolute;
-      bottom: 3rem;
-    }
-
-    .border-list {
-      padding-bottom: 14px;
-    }
-  
-
+  .border-list {
+    padding-bottom: 14px;
+  }
 }
 </style>

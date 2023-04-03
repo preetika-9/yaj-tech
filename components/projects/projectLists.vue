@@ -1,6 +1,6 @@
 <template>
     <div>
-  <div class="grid-1 grid grid-cols-3 md:grid-cols-2 lg:grid-cols-3 items-center pt-12 card-projects">
+  <div class="grid-1 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 items-center pt-12 card-projects">
     <!-- <div class="flex justify-center"> -->
     <div
       class="block max-w-sm  bg-white shadow-lg dark:bg-neutral-700 mb-10"

@@ -1,10 +1,10 @@
 <template>
   <div class="left-card ml-14">
     <div class="mx-10">
-      <div class="ml-12 mr-10 pt-12">
+      <div class=" mr-10 pt-12 w-full">
         <div class="relative">
           <div
-            class="absolute inset-y-0 right-14 flex items-center justify-center"
+            class="absolute inset-y-0 right-0.5 flex items-center justify-center "
           >
             <img
               src="../../assets/img/search_icon.svg"
@@ -17,7 +17,7 @@
             type="text"
             placeholder="Search"
           />
-        </div>
+        </div>border
       </div>
       <!-- category -->
       <div class="pt-10">
@@ -25,7 +25,7 @@
         <div class="d-flex flex-wrap">
           <div v-for="b in btns">
             <button
-              class="mt-4 mr-2 px-4 py-2 bg-white border-2 border-black text_black text-sm rounded-full transition duration-500 ease-in-out transform hover:opacity-75 hover:scale-105"
+              class="mt-4 mr-2 px-4 py-2 bg-white border-2  text_black text-sm rounded-full transition duration-500 ease-in-out transform hover:opacity-75 hover:scale-105"
             >
               {{ b.name }}
             </button>
