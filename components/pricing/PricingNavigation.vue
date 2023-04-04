@@ -6,18 +6,18 @@
             <p class="text-white text-6xl pt-56 hero_left_div">
           Pricing
         </p>
-        <p class="text-white text-xl pt-2">Various different packages to fit all price<br> points. Start with a trial and upgrade any time.</p>
+        <p class="text-white text-xl pt-2">Various different packages to fit all price points. Start with a trial and upgrade any time.</p>
         </div>
         
         <div class="pb-16">
-          <img src="../../assets/img/Union.svg" class="pb-2" />
-          <p class="text-white">
+          <img src="../../assets/img/Union.svg" class="pb-2 " />
+          <p class="text-white text-base">
             Kamaladi, Laldurbar <br />Kathmandu <br />Nepal
           </p>
         </div>
 
         <div>
-          <p class="text-white text-xl">
+          <p class="text-white text-xl text ">
             Trusted by over 200 start ups and other business. <br />An agile
             shop for excellence in enterprise solutions.
           </p>
@@ -74,6 +74,19 @@
   }
   .hero-section {
     margin-right: 2.5rem;
+  }
+
+  .text-xl{
+    font-size: 16px;
+    line-height: 23px;
+  }
+  .text-base{
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .text{
+    padding-bottom: 28px;
   }
 }
 </style>

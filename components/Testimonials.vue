@@ -14,7 +14,7 @@
             />
             <div>
               <p class="text-white font-semibold text-xl">{{ p.name }}</p>
-              <p class="text-gray-300">{{ p.post }}</p>
+              <p class="text-gray-300 text-sm">{{ p.post }}</p>
             </div>
           </div>
           <p class="text-gray-300">{{ p.description }}</p>
@@ -55,7 +55,7 @@ const title = ref("Testimonials");
 @media screen and (max-width: 600px) {
 
 .text-xl{
-font-size: 15px;
+font-size: 18px;
 }
 
 .pb-10{
@@ -67,10 +67,14 @@ font-size: 15px;
   margin-right: 10px;
 }
 .cards{
-  padding-bottom: 16px;
+  padding-bottom: 30px;
 }
 .pb-24{
   padding-bottom: 8px;
+}
+
+.text-sm{
+  font-size: 10px;
 }
 }
 

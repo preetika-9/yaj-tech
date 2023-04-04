@@ -1,5 +1,5 @@
 <template>
-  <div class="grid-1 grid grid-cols-3 md:grid-cols-3 lg:grid-cols-3">
+  <div class="grid-1 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
     <div class="bg-white cards rounded-lg py-14 px-7">
       <div class="text-center">
         <p class="text-primary pb-4 font_600 text-2xl">Lite Plan</p>
@@ -79,8 +79,9 @@
 
 @media screen and (max-width: 600px) {
   .cards {
-    height: 195px;
-    width: 90px;
+    height: 500px;
+    width: 310px;
+    margin-bottom: 30px;
 
     // height: 400px;
     // width: 300px;
@@ -88,38 +89,38 @@
   }
 
   .text-5xl{
-    font-size: 10px;
+    font-size: 28px;
   }
 
-  .text-2xl{
-    font-size: 10px;
-    line-height: 10px;
-  }
+  // .text-2xl{
+  //   font-size: 10px;
+  //   line-height: 10px;
+  // }
   .py-14{
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
-  .pb-4{
-    padding-bottom: 10px;
-  }
-  .text-lg{
-    font-size: 8px;
-    line-height: 10px;
-  }
+  // .pb-4{
+  //   padding-bottom: 10px;
+  // }
+  // .text-lg{
+  //   font-size: 8px;
+  //   line-height: 10px;
+  // }
   .pb-10{
-    padding-bottom: 5px;
+    padding-bottom: 20px;
   }
 
   .pt-10{
-    padding-top: 5px;
+    padding-top: 20px;
   }
 
-  .pb-3{
-    padding-bottom: 3px;
-  }
+  // .pb-3{
+  //   padding-bottom: 3px;
+  // }
   .pb-14{
-    padding-bottom: 3px;
+    padding-bottom: 24px;
   }
   .py-3{
     padding-top: 4px;
@@ -127,8 +128,8 @@
   }
 
   .px-7{
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .mr-14{

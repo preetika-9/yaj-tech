@@ -6,23 +6,23 @@
       </div>
 
       <div
-        class="grid-1 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 items-center pb-12 pl-6"
+        class="grid-1 grid md:grid-cols-2 lg:grid-cols-2 items-center pb-12 pl-6"
       >
-        <div>
-          <p class="text-xl font_500 leading-8">
+        <div class="left-text">
+          <p class="text-xl left-text font_500 leading-8">
             <b> YAJ Tech </b>has worked with more than <b>1900 business</b>
-            <br />(and counting) in the past <b>18 years</b> and we offer our<br />
-            experience with best expert talent pool in the<br />
+            (and counting) in the past <b>18 years</b> and we offer our
+            experience with best expert talent pool in the
             industry to fulfill all your application development needs.
           </p>
-          <p class="text-xl font_500 pt-6 leading-8">
-            We deploy best practices, proven development<br />
-            methodologies and <b>time-tested optimum delivery</b> <br />models
-            for developing and building application on a<br />
+          <p class="text-xl left-text font_500 pt-6 leading-8">
+            We deploy best practices, proven development
+            methodologies and <b>time-tested optimum delivery</b> models
+            for developing and building application on a
             <b>fixed time & cost basis</b>.
           </p>
         </div>
-        <div class="grid-1 grid  lg:grid-cols-2 " >
+        <div class="grid-1 grid grid-cols-2 lg:grid-cols-2 box-grid" >
           <div class="boxes mb-8 pt-10 " v-for="l in lists" >
             <p class="text-center text-white font-bold text-2xl">{{ l.number}}</p>
             <p class="text-center text-white text-sm font-normal">{{ l.label }}</p>
@@ -66,13 +66,27 @@ const title = ref("Who we are")
   border-radius: 16px;
 }
 
+.left-text{
+  width: 540px;
+
+}
+
 @media screen and (max-width: 600px) {
   .boxes {
   background-color: #1b96b8;
   height: 70px;
   width: 100px;
   border-radius: 16px;
-  margin-left: 50px;
+  // margin-left: 20px;
+ 
+}
+
+.box-grid{
+  margin-top: 20px;
+}
+.left-text{
+  width: 300px;
+
 }
 
 .mb-8{
@@ -82,6 +96,8 @@ const title = ref("Who we are")
 .pt-10 {
   padding-top: 15px;
 }
+
+
 .text-xl {
     font-size: 14px;
     line-height: 24px;
@@ -114,16 +130,14 @@ const title = ref("Who we are")
 }
 
 .profiles{
-  height: 40px;
-  width: 40px;
+  height: 60px;
+  width: 60px;
 }
 
-.mr-14{
-  margin-right: 1rem;
-}
+
 
 .pt-20{
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 
 }

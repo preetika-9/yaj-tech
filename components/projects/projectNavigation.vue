@@ -15,7 +15,7 @@
           <div class="d-flex flex-wrap">
             <div v-for="b in btns">
               <button
-                class="mt-4 mr-2 px-4 py-2 bg-black border-2 border-white text_white rounded-full transition duration-500 ease-in-out transform hover:opacity-75 hover:scale-105"
+                class="mt-4 mr-2 px-4 py-2 bg-black  text_white rounded-full transition duration-500 ease-in-out transform hover:opacity-75 hover:scale-105 btns"
               >
                 {{ b.name }}
               </button>
@@ -25,7 +25,7 @@
             <p class="text_white font_500 text-xl">Date:</p>
             <p class="text_white">March 28, 2023</p>
           </div>
-          <div class="pt-4">
+          <div class="pt-4 tags">
             <p class="text_white font_500 text-xl">Tags:</p>
             <nav class="w-full rounded-md">
               <ol class="list-reset d-flex flex-wrap">
@@ -138,6 +138,10 @@ const btns = ref([
 .img_hero {
   width: 540px;
 }
+
+.btns{
+  border: 0.5px solid rgba(255, 255, 255, 0.9);
+}
 // .border-list {
 //   border-top: 0.1px solid rgba(255, 255, 255, 0.8);
 // }
@@ -146,7 +150,7 @@ const btns = ref([
 
 .text-xl{
   font-size: 16px;
-  line-height: 20px;
+  line-height: 24px;
 }
 
 .mx-14{
@@ -165,6 +169,19 @@ const btns = ref([
 .px-20{
     padding-right: 0px;
     padding-left: 0px;
+  }
+
+  .tags{
+    padding-bottom: 20px;
+  }
+
+  .px-4{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .py-2{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 }
 

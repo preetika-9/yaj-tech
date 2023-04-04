@@ -15,20 +15,20 @@
         </div>
         <div class="pl-20">
           <p
-            class="text-white text-xl font-semibold pb-4"
+            class="text-white text-2xl font-semibold pb-4"
           >
             Pocket Sports
           </p>
           <p
-            class="text-white font_500 text-lg"
+            class="text-white font_500 text-xl"
           >
-            We started our journey with the idea of creating<br />
+            We started our journey with the idea of creating
             innovative products,
           </p>
         </div>
       </div>
 
-      <div class="grid grid-cols-4 md:grid-cols-4 lg:grid-cols-6 pt-16 pl-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 pt-16 pl-6">
         <div class="d-flex items-center list" v-for="sm in seeMore">
           <p class="text-white pr-4">{{ sm.label }}</p>
           <img
@@ -73,7 +73,7 @@ const title = ref("Projects");
 }
 @media screen and (max-width: 600px) {
   .pl-20 {
-    padding-left: 22px;
+    padding-left: 0px;
     padding-top: 10px;
   }
 
@@ -83,15 +83,18 @@ const title = ref("Projects");
   .pt-16 {
     padding-top: 20px;
   }
-  .projects{
-    display: flex;
-  }
+  
   .text-lg{
     
     line-height: 20px;
   }
+
+  .text-xl {
+    font-size: 18px;
+    line-height: 22px;
+}
   .pr-4{
-    padding-right: 0px;
+    padding-right: 10px;
     font-size: 12px;
     line-height: 14px;
   }
@@ -100,7 +103,8 @@ const title = ref("Projects");
     width: 20px;
   }
   .list{
-    padding-right: 15px;
+   
+    padding-bottom: 15px;
   }
   
 }

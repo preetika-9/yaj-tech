@@ -70,7 +70,7 @@ const props = defineProps({
   }
 
   .mb-40 {
-    margin-bottom: 10rem;
+    margin-bottom: 13rem;
   }
   .mr-14 {
     margin-right: 25px;
@@ -79,11 +79,11 @@ const props = defineProps({
   // display: none;
   .bottom-28 {
     position: absolute;
-    bottom: 3rem;
+    bottom: 1.5rem;
   }
 
   .border-list {
-    padding-bottom: 14px;
+    padding-bottom: 26px;
   }
 }
 </style>

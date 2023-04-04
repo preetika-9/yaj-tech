@@ -1,7 +1,8 @@
 <template>
   <div class="bg-white">
-    <div
-      class="grid-1 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 py-32 mx-24"
+    <div class="mx-14">
+      <div
+      class="grid-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 py-32 mx-24"
     >
       <div class="d-flex justify-center items-center">
         <div class="">
@@ -22,12 +23,12 @@
 
       <div>
         <div
-          class="grid-1 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 py-32 mx-24"
+          class="grid-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 py-32 mx-24"
         >
           <div class="d-flex pb-12" v-for="f in features">
             <div class="pr-4">
                 <!-- <img src="../../assets/img/check_icon.svg"> -->
-                <CommonIcon name="check" class="icon"></CommonIcon>
+                <CommonIcon name="check" :size="iconSize"></CommonIcon>
             </div>
             <div >
               <p class="text-black font_500 text-xl pb-2">{{ f.title }}</p>
@@ -40,10 +41,13 @@
         </div>
       </div>
     </div>
+    </div>
   </div>
 </template>
 
 <script setup>
+
+const iconSize = ref('20px');
 const features = ref([
     {
         title: 'Multiple Accounts',
@@ -68,41 +72,44 @@ const features = ref([
 
 @media screen and (max-width: 600px) {
   .text-xl{
-    font-size: 14px;
-    line-height: 15px;
+    font-size: 16px;
+    line-height: 20px;
   }
   .text-base{
-    font-size: 10px;
-    line-height: 15px;
+    font-size: 14px;
+    line-height: 20px;
   }
   .pr-4{
-    padding-right: 2px;
+    padding-right: 12px;
   }
 
   .mx-24{
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 0px;
+    margin-left: 0px;
+    
   }
 
   .text-4xl{
-    font-size: 18px;
+    font-size: 22px;
     line-height: 20px;
   }
   .py-32{
-    padding-top: 20px;
-    padding-bottom: 0px;
+    padding-top: 40px;
+    padding-bottom: 10px;
   }
 
   .py-4{
     padding-top: 5px;
     padding-bottom: 5px;
   } 
+
+  .pb-12{
+    padding-bottom: 25px;
+  }
   .px-6{
     padding-right: 15px;
     padding-left: 15px;
   }
-  .icon{
-    display: none;
-  }
+
 }
 </style>

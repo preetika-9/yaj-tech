@@ -4,13 +4,13 @@
   >
     <div class="mx-6 py-10 text-center md:text-left">
       <div class="grid-1 grid gap-8  sm:gap-8  md:grid-cols-2 lg:grid-cols-5">
-        <div class="">
-          <img src="../../assets/img/logo.svg" />
-          <p class="text-white pt-4">Build for Tech.</p>
+        <div class="footer-top">
+          <img src="../../assets/img/logo.svg" class="logo"/>
+          <p class="text-white pt-4 text">Build for Tech.</p>
         </div>
 
-        <div>
-          <div class="flex">
+        <div class="footer">
+          <div class="d-flex">
             <img src="../../assets/img/circle.svg" class="pr-2 pt-2 h-5 w-5" />
             <p
               class="mb-4 flex justify-center font-semibold uppercase md:justify-start text-white 
@@ -20,15 +20,15 @@
             </p>
           </div>
           <div class="links ">
-            <p class="mb-4 text-base" v-for="fl in footerLeft">
-            <NuxtLink :to="`{{ fl.to }}`" class="text-white ">{{
+            <p class="mb-4 text-base " v-for="fl in footerLeft">
+            <NuxtLink :to="`{{ fl.to }}`" class="text_gray ">{{
               fl.label
             }}</NuxtLink>
           </p>
           </div>
         </div>
-        <div class="">
-          <div class="flex">
+        <div class="footer">
+          <div class="d-flex">
             <img src="../../assets/img/circle.svg" class="pr-2 pt-2 h-5 w-5" />
             <p
               class="mb-4 flex justify-center font-semibold uppercase md:justify-start text-white text-lg"
@@ -38,14 +38,14 @@
           </div>
           <div class="links ">
             <p class="mb-4 text-base" v-for="fr in footerRight">
-            <NuxtLink :to="`{{ fr.to }}`" class="text-white">{{
+            <NuxtLink :to="`{{ fr.to }}`" class="text_gray">{{
               fr.label
             }}</NuxtLink>
           </p>
           </div>
         </div>
-        <div class="">
-          <div class="flex">
+        <div class="footer">
+          <div class="d-flex">
             <img src="../../assets/img/circle.svg" class="pr-2 pt-2 h-5 w-5" />
             <p
               class="mb-4 flex justify-center font-semibold uppercase md:justify-start text-white text-lg"
@@ -53,7 +53,7 @@
               Social
             </p>
           </div>
-          <div class="flex">
+          <div class="d-flex">
             <NuxtLink to="https://www.facebook.com/yajtechnologies/"
               ><img
                 src="../../assets/img/facebook_icon.svg"
@@ -73,7 +73,7 @@
         </div>
         <div class="relative">
           <p
-            class="mb-4 flex justify-center font-semibold uppercase md:justify-start text-white text-lg"
+            class="mb-8 flex justify-center font-semibold uppercase md:justify-start text-white text-lg"
           >
             Get Our Latest <br />
             News in Your Inbox
@@ -96,10 +96,10 @@
 
         <div>
           <div class="flex"></div>
-          <p class="mb-4">
+          <p class="mb-4 ">
             <NuxtLink
               to="/"
-              class="font-semibold text-grey underline decoration-solid"
+              class="font-semibold text_gray underline decoration-solid"
               >Term & Conditions
             </NuxtLink>
           </p>
@@ -108,7 +108,7 @@
           <p class="mb-4">
             <NuxtLink
               to="/"
-              class="font-semibold text-grey underline decoration-solid"
+              class="font-semibold text_gray underline decoration-solid"
               >Privacy Policy</NuxtLink
             >
           </p>
@@ -117,21 +117,21 @@
           <p class="mb-4">
             <NuxtLink
               to="/"
-              class="font-semibold text-grey underline decoration-solid"
+              class="font-semibold text_gray underline decoration-solid"
               >Cookies Preferences</NuxtLink
             >
           </p>
         </div>
         <div class="yaj-link">
           <div>
-          <span>© 2023 </span>
+          <span class="text_gray">© 2023 </span>
           <NuxtLink
             to="/"
             class="text-white"
             href="https://tailwind-elements.com/"
             >YAJ Technologies.</NuxtLink
           ></div>
-          <p>All Rights Reserved</p>
+          <p class="text_gray">All Rights Reserved</p>
         </div>
       </div>
     </div>
@@ -179,12 +179,39 @@ const footerRight = ref([
 </script>
 
 <style lang="scss" scoped>
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 600px) {
+
+  .footer-top{
+   padding-bottom: 25px;
+   display: flex;
+   flex-direction: column;
+   justify-items: center;
+  }
+
+  .footer{
+    padding-bottom: 20px;
+  }
+
+  .d-flex{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+  .logo{
+    height: 48px;
+  }
+
+  .text{
+    float: left;
+  }
   .gap-8 {
     gap: 0rem;
   }
   .mb-4{
     margin-bottom: 0.5rem;
+  }
+  .pt-4{
+    padding-top: 1rem;
   }
 
   .px-12{
@@ -203,7 +230,7 @@ const footerRight = ref([
   }
 
   .text-base{
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     line-height: 0.5rem;
   }
 
@@ -212,11 +239,11 @@ const footerRight = ref([
   }
 
   .links{
-    display: flex;
-    flex-wrap: wrap;
+    // display: flex;
+    // flex-wrap: wrap;
    p{
     padding-right: 9px;
-    padding-bottom: 4px;
+    padding-bottom: 8px;
    }
   }
 

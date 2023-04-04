@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <div class="grid  grid-cols-2 md:grid-cols-4 lg:grid-cols-4">
+    <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4">
       <div
         class="block max-w-sm rounded-lg bg_colors card mb-6"
         v-for="ci in cardItem"
@@ -12,12 +12,11 @@
             </p>
             <NuxtLink :to="ci.to">
               <div class="d-flex items-center">
-                <p
-                  class="pr-4 text-lg font_500"
-                >
-                  View more
-                </p>
-                <img src="../../assets/img/arrow_icon.svg" class="arrow-icon"/></div
+                <p class="pr-4 text-lg font_500">View more</p>
+                <img
+                  src="../../assets/img/arrow_icon.svg"
+                  class="arrow-icon"
+                /></div
             ></NuxtLink>
           </div>
 
@@ -71,29 +70,12 @@ const cardItem = ref([
 .bg_colors {
   background-color: #f2f9ff;
 }
-
 @media screen and (max-width: 600px) {
   .card {
-    width: 150px;
-    height: 245px;
-    
+    height: 365px;
   }
-  .pr-4{
-    padding-right: 0.4rem;
-  }
-  .text-lg{
-    line-height: 15px;
-  }
-  .py-3{
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-  .pt-4{
-    padding-top: 0rem;
-  }
-  .arrow-icon{
-    height: 20px;
-    width: 20px;
+  .text-3xl {
+    font-size: 1.5rem;
   }
 }
 </style>

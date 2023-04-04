@@ -6,12 +6,14 @@
       </div>
       <div class="grid-1 grid md:grid-cols-2 lg:grid-cols-2 items-center pl-6">
         <div>
-          <p clas="text-xl leading-8 font_500">
-            We started our journey with the idea of creating<br />
-            innovative products, and we have been following this<br />
-            trend since 2004 and continue to build technological<br />
+          <div class=" text-cover">
+            <p clas="text-xl leading-8 font_500">
+            We started our journey with the idea of creating
+            innovative products, and we have been following this
+            trend since 2004 and continue to build technological
             solutions for our customers.
           </p>
+          </div>
           <button
             class="rounded-lg bg-[#1B96B8] px-12 py-4 text-white font_700 my-12"
           >
@@ -21,7 +23,7 @@
             Recognized on Clutch as a Top Web Developer In Nepal
           </p>
           <div
-            class="grid-1 grid grid-cols-8 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-8 pt-10"
+            class="grid-1 grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-8 pt-10"
           >
             <div class="img-grid">
               <img src="../assets/img/Mask group.svg" />
@@ -58,7 +60,15 @@ const title = ref("Our review on Marketplace");
 </script>
 
 <style lang="scss" scoped>
+
+.text-cover{
+    width: 532px;
+  }
 @media screen and (max-width: 600px) {
+  
+  .text-cover{
+    width: 295px;
+  }
   .px-12 {
     padding-right: 16px;
     padding-left: 16px;
@@ -88,6 +98,8 @@ const title = ref("Our review on Marketplace");
 
   .pt-10 {
     padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 2rem;
   }
 
   .prev {

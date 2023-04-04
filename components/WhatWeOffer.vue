@@ -7,14 +7,14 @@
       </div>
       </div>
       <div>
-        <div class="offer-section max-w-[1710px] max-h-[330px]">
+        <div class="offer-section max-w-[1710px] h-[330px]">
           <div
-            class=" grid grid-cols-3 md:grid-cols-3 lg:grid-cols-3 items-center"
+            class=" grid md:grid-cols-3 lg:grid-cols-3 items-center"
             
           >
             <div v-for="l in lists" class="px-12 py-12 ">
               <p class="text-primary font_600 text-xl pb-4">{{ l.title }}</p>
-              <p class="text-xl">{{ l.description }}</p>
+              <p class="text-lg">{{ l.description }}</p>
             </div>
           </div>
         </div>
@@ -62,25 +62,30 @@ margin-right: 35px;
 }
 
 .py-12{
-  padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
+  padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .text-xl {
-    font-size: 10px;
-    line-height: 10px;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.text-lg{
+  font-size: 16px;
 }
 .px-12 {
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .pb-4{
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.8rem;
 }
 
 .offer-section {
   padding: 10px;
+  height: 945px;
 }
 }
 </style>

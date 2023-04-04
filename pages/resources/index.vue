@@ -14,7 +14,7 @@
 <style lang="scss" scoped>
 @media screen and (max-width: 600px) {
 .resources-page{
-    padding-top: 270px !important;
+    padding-top: 220px !important;
 }
 }
 </style>

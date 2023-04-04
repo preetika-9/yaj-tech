@@ -1,5 +1,5 @@
 <template>
-  <div class="grid-1 grid grid-cols-3 md:grid-cols-3 lg:grid-cols-3">
+  <div class="grid-1 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
     <div class="card p-8 mb-6">
       <div class="">
         <CommonIcon name="computer" class="icon"></CommonIcon>
@@ -84,8 +84,8 @@ svg {
 
 @media screen and (max-width: 600px) {
   .card {
-    height: 225px;
-    width: 120px;
+    height: 245px;
+    width: 310px;
   }
 }
 </style>

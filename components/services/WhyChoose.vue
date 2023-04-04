@@ -2,8 +2,8 @@
   <div class="bg_color">
     <div class="ml-14">
       <div class="d-flex justify-between">
-        <div>
-          <div class="py-24 d-flex">
+        <div class="">
+          <div class="pt-24 pb-16 d-flex">
             <img
               src="../../assets/img/circle.svg"
               class="pr-2 h-6 w-6 text-red-500"

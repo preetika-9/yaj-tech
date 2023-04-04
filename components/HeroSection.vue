@@ -105,4 +105,11 @@
 }
 
 }
+
+@media screen and (max-width: 600px) {
+  .text-xl{
+    font-size: 16px;
+    line-height: 23px;
+  }
+}
 </style>

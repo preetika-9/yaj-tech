@@ -1,10 +1,10 @@
 <template>
   <div>
     <div class="mx-6 py-10 text-center md:text-left pl-6">
-      <div class="grid-1 grid grid-cols-5 md:grid-cols-2 lg:grid-cols-6">
+      <div class="grid-1 grid grid-cols-6  md:grid-cols-2 lg:grid-cols-6">
         
         <!-- <div class="boxes rounded-2xl"> </div> -->
-
+<div></div>
       
           <img src="../assets/img/tool_2.svg" />
         
@@ -22,7 +22,7 @@
         
       </div>
 
-      <div class="grid-1 grid grid-cols-5 md:grid-cols-2 lg:grid-cols-6 pt-8">
+      <div class="grid-1 grid grid-cols-6 md:grid-cols-2 lg:grid-cols-6 pt-8">
       
           <img src="../assets/img/tool_2 (4).svg" />
         

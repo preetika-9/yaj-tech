@@ -5,36 +5,36 @@
         <p class="text-black text-xl pb-14">Trusted By</p>
         <div class="container p-6">
             
-          <div class="grid gap-x-60 sm:gap-x-60  md:grid-cols-5 lg:grid-cols-5">
+          <div class="grid  grid-cols-2 md:grid-cols-5 lg:grid-cols-5">
               <!-- <div class="d-flex justify-between"> -->
             <div class="mb-6 lg:mb-0">
               <img
                 src="../../assets/img/airbnb (1).svg"
-                class=" "
+                class=" images"
               />
             </div>
             <div class="mb-6 lg:mb-0">
               <img
                 src="../../assets/img/spotify (1).svg"
-                class=""
+                class="images"
               />
             </div>
             <div class="mb-6 lg:mb-0">
               <img
                 src="../../assets/img/linkedin (1).svg"
-                class=""
+                class="images"
               />
             </div>
             <div class="mb-6 lg:mb-0">
               <img
                 src="../../assets/img/google (1).svg"
-                class=""
+                class="images"
               />
             </div>
             <div class="mb-6 lg:mb-0">
               <img
                 src="../../assets/img/uber (1).svg"
-                class=""
+                class="images"
               />
             </div>
           </div>
@@ -56,11 +56,14 @@
       padding-top: 1rem ;
       padding-bottom: 1rem ;
   }
-  .text-xl{
-    font-size: 16px;
-  }
+
   .pb-14{
     padding-bottom: 24px;
+  }
+
+  .images{
+    margin: auto;
+    height: 24px;
   }
   }
   

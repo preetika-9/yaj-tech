@@ -13,11 +13,11 @@
             />
           </div>
           <input
-            class="bg-transparent py-3 text-black placeholder-black outline-none border-b-2"
+            class="bg-transparent py-3 text-black placeholder-black outline-none border-b-2 w-full search"
             type="text"
             placeholder="Search"
           />
-        </div>border
+        </div>
       </div>
       <!-- category -->
       <div class="pt-10">
@@ -25,7 +25,7 @@
         <div class="d-flex flex-wrap">
           <div v-for="b in btns">
             <button
-              class="mt-4 mr-2 px-4 py-2 bg-white border-2  text_black text-sm rounded-full transition duration-500 ease-in-out transform hover:opacity-75 hover:scale-105"
+              class="mt-4 mr-2 px-4 py-2 bg-white border-2 btns text_black text-sm rounded-full transition duration-500 ease-in-out transform hover:opacity-75 hover:scale-105"
             >
               {{ b.name }}
             </button>
@@ -189,4 +189,25 @@ const readNextList = ref([
 
   background: #ffffff;  
 }
+
+.search{
+  border-bottom: 0.2px solid #525252;
+}
+
+.btns{
+  border: 0.5px solid #424242;
+}
+
+@media screen and (max-width: 600px) {
+
+.ml-14{
+  margin-left: 0rem;
+}
+
+.left-card {
+  width: 310px;
+  height: 1115px;
+
+ 
+}}
 </style>

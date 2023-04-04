@@ -1,5 +1,5 @@
 <template>
-  <div style="height:90vh;width:100%;" class="bg-black">
+  <div style="height:90vh;width:100%;" class="bg-black resources-top">
     <div class="d-flex flex-wrap justify-between" style="height: 100%;width: 100%;">
       <div class="d-flex justify-between ml-14 pt-56">
         <p
@@ -47,7 +47,11 @@
 
 @media screen and (max-width: 600px) {
   .pt-56 {
-    padding-top: 200px;
+    padding-top: 150px;
+  }
+
+  .resources-top{
+    height: 70vh !important;
   }
 }
 </style>

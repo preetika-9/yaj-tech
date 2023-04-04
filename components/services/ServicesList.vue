@@ -1,12 +1,12 @@
 <template>
-  <div class="grid1 grid grid-cols-3 md:grid-cols-6 lg:grid-cols-6 pl-12 gap-6 sm:gap-6">
+  <div class="grid1 grid grid-cols-2 md:grid-cols-6 lg:grid-cols-6 pl-12 gap-6 sm:gap-6">
     <!-- <div class="d-flex items-center"> -->
 
-    <div class="d-flex items-center" v-for="l in list">
+    <div class="d-flex items-center  num" v-for="l in list">
       <div
-        class="bg-white text-white w-8 h-8 rounded-full flex justify-center items-center num"
+        class="bg-white text-white w-8 h-8 rounded-full flex justify-center items-center"
       >
-        <p class="text-black ">{{ l.number }}</p>
+        <p class="text-black text-base">{{ l.number }}</p>
       </div>
       <p class="text-white pl-2 text-lg">{{ l.label }}</p>
     </div>
@@ -47,14 +47,28 @@ const list = ref([
 <style lang="scss" scoped>
 @media screen and (max-width: 600px) {
 
-.num{
-    display: none;
-  }
+// .num{
+//     display: none;
+//   }
   .text-lg{
-    font-size: 10px;
+    font-size: 14px;
   }
   .gap-6{
     gap: 0rem;
+  }
+
+  .w-8{
+    width: 1rem;
+  }
+  .h-8{
+    height: 1rem;
+  }
+  .text-base{
+    font-size: 0.5rem;
+  }
+
+  .num{
+    padding-bottom: 0.7rem;
   }
 }
 </style>
