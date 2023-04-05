@@ -28,7 +28,7 @@
         </div>
       </div>
 
-      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 pt-16 pl-6">
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 pt-16 pl-6">
         <div class="d-flex items-center list" v-for="sm in seeMore">
           <p class="text-white pr-4">{{ sm.label }}</p>
           <img
@@ -107,5 +107,19 @@ const title = ref("Projects");
     padding-bottom: 15px;
   }
   
+}
+
+@media screen and (max-width: 902px) {
+  .project-icons{
+    height: 25px;
+    width: 25px;
+   
+  }
+
+  .list{
+   
+   padding-bottom: 15px;
+   padding-left: 50px;
+ }
 }
 </style>

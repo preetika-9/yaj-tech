@@ -3,7 +3,7 @@
     class="text-center text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 bg-black lg:text-left pl-8 pt-16"
   >
     <div class="mx-6 py-10 text-center md:text-left">
-      <div class="grid-1 grid gap-8  sm:gap-8  md:grid-cols-2 lg:grid-cols-5">
+      <div class="grid-1 grid gap-8  sm:gap-8  md:grid-cols-5 lg:grid-cols-5">
         <div class="footer-top">
           <img src="../../assets/img/logo.svg" class="logo"/>
           <p class="text-white pt-4 text">Build for Tech.</p>
@@ -91,7 +91,7 @@
     </div>
 
     <div class="mx-6 py-10 text-center md:text-left">
-      <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-5">
+      <div class="grid-1 grid gap-8 md:grid-cols-5 lg:grid-cols-5">
         <div></div>
 
         <div>
@@ -99,7 +99,7 @@
           <p class="mb-4 ">
             <NuxtLink
               to="/"
-              class="font-semibold text_gray underline decoration-solid"
+              class="font-semibold text_gray text-sm underline decoration-solid"
               >Term & Conditions
             </NuxtLink>
           </p>
@@ -108,7 +108,7 @@
           <p class="mb-4">
             <NuxtLink
               to="/"
-              class="font-semibold text_gray underline decoration-solid"
+              class="font-semibold text_gray text-sm underline decoration-solid"
               >Privacy Policy</NuxtLink
             >
           </p>
@@ -117,21 +117,21 @@
           <p class="mb-4">
             <NuxtLink
               to="/"
-              class="font-semibold text_gray underline decoration-solid"
+              class="font-semibold text_gray text-sm underline decoration-solid"
               >Cookies Preferences</NuxtLink
             >
           </p>
         </div>
         <div class="yaj-link">
           <div>
-          <span class="text_gray">© 2023 </span>
+          <span class="text_gray text-sm">© 2023 </span>
           <NuxtLink
             to="/"
-            class="text-white"
+            class="text-white text-sm"
             href="https://tailwind-elements.com/"
             >YAJ Technologies.</NuxtLink
           ></div>
-          <p class="text_gray">All Rights Reserved</p>
+          <p class="text_gray text-sm">All Rights Reserved</p>
         </div>
       </div>
     </div>
@@ -255,6 +255,44 @@ const footerRight = ref([
   // .yaj-link{
   //   display: flex;
   // }
+}
+
+
+@media screen and (max-width: 902px) {
+  .py-4 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.px-12 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.sm\:gap-8 {
+    gap: 1rem;
+}
+.text-lg{
+  font-size: 1rem;
+}
+
+.py-10{
+  padding-bottom: 1.5rem;
+}
+.text-base{
+  font-size: 0.9rem;
+}
+
+.mb-8{
+  margin-bottom: 10px;
+}
+.right-20 {
+    right: -1rem;
+}
+
+.mb-4{
+  margin-bottom: 0.2rem;
+}
 }
 </style>
 

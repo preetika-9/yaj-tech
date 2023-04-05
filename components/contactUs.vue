@@ -1,7 +1,7 @@
 <template>
   <div class="bg_color">
     <div class="mx-14">
-      <div class="grid-1 grid md:grid-cols-2 lg:grid-cols-2 pt-8">
+      <div class="grid-1 grid md:grid-cols-1 lg:grid-cols-2 pt-8">
         <div>
           <div class="pb-16 pt-24">
             <DynamicTitlesWhite :title="title" />
@@ -139,10 +139,6 @@ Contact Us
     font-size: 14px;
   }
 
-  // .btn {
-  //   width: 152px;
-  //   height: 48px;
-  // }
 
   .text-lg {
     font-size: 16px;
@@ -162,5 +158,23 @@ Contact Us
     display: flex;
     flex-direction: column;
   }
+}
+
+
+@media screen and (max-width: 902px) {
+  .contact_form{
+  width: 100%;
+  height: 390px;
+  }
+
+  .py-24{
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+  }
+
+  .pt-10{
+    padding-top: 1rem;
+  }
+
 }
 </style>

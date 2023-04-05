@@ -16,8 +16,8 @@
         </div>
 
         <div>
-          <p class="text-white text-xl">
-            Trusted by over 200 start ups and other business. <br />An agile
+          <p class="text-white text-xl bottom-txt">
+            Trusted by over 200 start ups and other business. An agile
             shop for excellence in enterprise solutions.
           </p>
         </div>
@@ -78,12 +78,18 @@
   right: 4rem;
 }
 
-@media screen and (max-width: 1280px) {
+// .bottom-txt{
+//   width: 484px;
+// }
+
+@media screen and (max-width: 600px) {
 .py-4{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 } 
-
+.bottom-txt{
+  width: 350px;
+}
 .px-8{
   padding-left: 1rem;
   padding-right: 1rem;
@@ -112,4 +118,20 @@
     line-height: 23px;
   }
 }
+
+@media screen and (max-width: 902px) {
+
+//   .bottom-txt{
+//   width: 760px;
+// }
+.pb-20{
+  padding-bottom: 2rem;
+}
+
+.hero-section{
+  margin-right: 2.5rem;
+}
+
+}
+
 </style>

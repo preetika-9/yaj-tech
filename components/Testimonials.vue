@@ -4,7 +4,7 @@
       <div class="pt-24 pb-16 d-flex items-center">
         <DynamicTitlesWhite :title="title"/>
       </div>
-      <div class="grid-1 grid md:grid-cols-2 lg:grid-cols-3 items-center cards">
+      <div class="grid-1 grid md:grid-cols-3 lg:grid-cols-3 items-center cards">
         <div v-for="p in peoples" class="mx-20 cards">
           <div class="d-flex items-center pb-10">
             <img
@@ -78,4 +78,15 @@ font-size: 18px;
 }
 }
 
+@media screen and (max-width: 902px) {
+.mx-20{
+margin-left: 15px;
+margin-right: 15px;
+}
+
+.pb-10{
+  padding-bottom: 10px;
+}
+
+}
 </style>

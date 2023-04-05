@@ -12,9 +12,9 @@ body {
 
 .hero_height {
   width: 540px;
-  max-width: 540px;
+  // max-width: 540px;
   height: 856px;
-  max-height: 856px;
+  // max-height: 856px;
   background: linear-gradient(168.86deg, #b6f3ff -3.07%, #1b96b8 74.97%);
 }
 
@@ -142,7 +142,7 @@ body {
   }
 
   .text-6xl{
-    font-size: 28px;
+    font-size: 26px;
   }
   .text-xl{
     font-size: 20px;
@@ -179,12 +179,52 @@ body {
   
 }
 
-// @media screen and (max-width: 1280px) {
-//   .hero_height {
-//     display: none;
-//   }
 
-//   .left-nav {
-//     display: none;
-//   }
-// }
+
+@media screen and (max-width: 902px) {
+  .left-nav {
+    display: none;
+  }
+
+  .small-nav{
+    width: 100%;
+  }
+
+  .text-6xl{
+    font-size: 34px;
+    line-height: 50px !important;
+  }
+
+  .pt-56{
+    padding-top: 10rem;
+  }
+  .hero_height {
+    display: none;
+ }
+
+ .pt-24{
+  padding-top: 4rem;
+ }
+
+ .pb-16{
+  padding-bottom: 2rem;
+ }
+ .ml-14{
+  margin-left: 2.5rem;
+ }
+ .mr-14{
+  margin-right: 2.5rem;
+ }
+
+ .pattern-img{
+  display: none;
+ }
+
+ .text-xl{
+  font-size: 1.1rem;
+ }
+
+ .pb-24{
+  padding-bottom: 4rem;
+ }
+}

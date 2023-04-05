@@ -4,7 +4,7 @@
       <div class="pt-24 pb-16">
         <DynamicTitles :title="title" />
       </div>
-      <div class="grid-1 grid md:grid-cols-2 lg:grid-cols-2 items-center pl-6">
+      <div class="grid-1 grid md:grid-cols-1 lg:grid-cols-2 items-center pl-6">
         <div>
           <div class=" text-cover">
             <p clas="text-xl leading-8 font_500">
@@ -40,7 +40,7 @@
           </div>
         </div>
         <div class="relative">
-          <img src="../assets/img/review 1.svg" alt="review" />
+          <img src="../assets/img/review 1.svg" alt="review" class="image"/>
           <img
             src="../assets/img/arrow_icon (3).svg"
             class="prev absolute top-1/2 -left-24 transform -translate-y-1/2 py-2 px-4 z-10"
@@ -111,5 +111,35 @@ const title = ref("Our review on Marketplace");
     right: -3rem;
     height: 40px;
   }
+}
+
+@media screen and (max-width: 902px) {
+  .text-cover[data-v-f1559b72] {
+    width: 770px;
+}
+.my-12{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.pt-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    padding-left: 7rem;
+  }
+
+  .image{
+    padding-left: 95px;
+  }
+
+  .px-4{
+    padding-left: 7rem;
+  }
+  .right-48 {
+    right: 1rem;
+}
+.text_20 {
+    font-size: 1rem;
+}
 }
 </style>

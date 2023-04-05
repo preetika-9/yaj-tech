@@ -1,6 +1,6 @@
 <template>
     <div class="pl-6">
-  <div class="grid-1 grid grid-cols-5 md:grid-cols-2 lg:grid-cols-5 items-center pb-12 ">
+  <div class="grid-1 grid grid-cols-5 md:grid-cols-5 lg:grid-cols-5 items-center pb-12 ">
     <div>
       <p class="text-xl  font-semibold">For Startups</p>
     </div>
@@ -25,7 +25,7 @@
     </div>
   </div>
 
-  <div class="grid-1 grid grid-cols-5 md:grid-cols-2 lg:grid-cols-5 items-center pb-12">
+  <div class="grid-1 grid grid-cols-5 md:grid-cols-5 lg:grid-cols-5 items-center pb-12">
     <div>
       <p class="text-xl font-semibold">For SMB</p>
     </div>
@@ -48,7 +48,7 @@
       </p>
     </div>
   </div>
-  <div class="grid-1 grid grid-cols-5 md:grid-cols-2 lg:grid-cols-5 items-center pb-24">
+  <div class="grid-1 grid grid-cols-5 md:grid-cols-5 lg:grid-cols-5 items-center pb-24">
         <div>
             <p class="text-xl font-semibold">For Enterprise</p>
         </div>
@@ -97,5 +97,18 @@
   padding-bottom: 1rem;
 }
 
+}
+
+
+@media screen and (max-width: 902px) {
+.images{
+  height: 55px;
+  width: 55px;
+}
+
+.text-lg{
+  font-size: 0.9rem;
+  line-height: 22px;
+}
 }
 </style>

@@ -27,4 +27,11 @@ const title = ref("How we work");
   top:35px;
 }
 }
+
+@media screen and (max-width: 902px) {
+.carousel{
+  top: 5rem;
+  right: 1rem;
+}
+}
 </style>

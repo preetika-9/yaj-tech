@@ -4,7 +4,7 @@
     :class="[bgColor, { 'pt-10': !isScrolled, 'pt-0': isScrolled }]"
   >
     <nav
-      class="mx-auto p-4 content-center grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 "
+      class="mx-auto p-4 content-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 "
     >
       <div
         class="items-center grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 small-nav"
@@ -31,11 +31,6 @@
         <LayoutMiniNavbar  :isActive="isActive"/>
       </div>
       </div>
-
-
-
-
-
 
       <div class="flex items-center flex-wrap justify-end left-nav">
         <div class="relative mr-8">
@@ -148,6 +143,11 @@ const textColor = computed(() => {
   display: none;
 }
 
+}
+
+
+@media screen and (max-width: 902px) {
+ 
 }
 
 

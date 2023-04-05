@@ -1,13 +1,8 @@
-<!-- <template>
-  <div class="carsouel-card">
-    <p></p>
-  </div> 
-</template>-->
 <template>
   <div class="carousel relative">
     <div class="slides flex transition-transform duration-500 ease-in-out">
       <div class="slide">
-        <div class="carsouel-card p-7 ">
+        <div class="carsouel-card p-7">
           <p class="text-white font_600 text_27">Elicitation</p>
           <p class="text-white font_500 text-xl texts">
             We started our journey with the idea of creating innovative
@@ -93,24 +88,52 @@ export default {
 }
 
 @media screen and (max-width: 600px) {
-  .carsouel-card  {
-  width: 115px;
-  height: 60px;
-  padding: 8px;
-}
-.carousel {
-  width: 215px;
-}
-.arrow-left{
-  padding-left: 3.5rem;
+  .carsouel-card {
+    width: 115px;
+    height: 60px;
+    padding: 8px;
+  }
+  .carousel {
+    width: 215px;
+  }
+  .arrow-left {
+    padding-left: 3.5rem;
+  }
+
+  .text_27 {
+    font-size: 12px;
+  }
+  .texts {
+    font-size: 8px;
+    line-height: 8px;
+  }
 }
 
-.text_27{
-  font-size: 12px;
-}
-.texts{
-  font-size: 8px;
-  line-height: 8px;
-}
+@media screen and (max-width: 902px) {
+  .p-7 {
+    padding: 1rem;
+  }
+
+  .text_27 {
+    font-size: 1.3rem;
+  }
+
+  .text-xl {
+    font-size: 0.9rem;
+    line-height: 22px;
+  }
+
+  .carsouel-card {
+    width: 284px;
+    height: 107px;
+  }
+
+  .carousel {
+    width: 395px;
+  }
+
+  .px-4 {
+    padding-left: 3rem;
+  }
 }
 </style>

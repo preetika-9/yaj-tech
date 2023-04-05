@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
       <div
         class="block max-w-sm rounded-lg bg_colors card mb-6"
         v-for="ci in cardItem"
@@ -27,7 +27,7 @@
           />
         </div>
         <div
-          class="text-3xl font_500 leading-8 py-3 px-6 dark:border-neutral-600 dark:text-neutral-50"
+          class="text-3xl font_500 leading-8 py-3 px-6 dark:border-neutral-600 dark:text-neutral-50 text"
         >
           <p>{{ ci.label }}</p>
         </div>
@@ -77,5 +77,19 @@ const cardItem = ref([
   .text-3xl {
     font-size: 1.5rem;
   }
+}
+
+@media screen and (max-width: 902px) {
+  .card {
+    width: 350px;
+    height: 420px;
+  }
+.text{
+  padding-right: 8rem;
+}
+.arrow-icon{
+  height: 28px;
+  widows: 28px;
+}
 }
 </style>

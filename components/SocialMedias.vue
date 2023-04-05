@@ -58,5 +58,20 @@
     height: 24px;
   }
 }
+@media screen and (max-width: 902px) {
+  .py-20 {
+    padding-top: 2rem ;
+    padding-bottom: 1rem ;
+}
 
+.py-16{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+div >img{
+    height: 25px;
+  }
+
+}
 </style>

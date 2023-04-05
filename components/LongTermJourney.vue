@@ -1,7 +1,7 @@
 <template>
   <div class="bg_color">
     <div class="mx-14 pb-24">
-      <div class="grid-1 grid md:grid-cols-2 lg:grid-cols-2 items-center">
+      <div class="grid-1 grid md:grid-cols-1 lg:grid-cols-2 items-center">
         <div class="pt-24 pb-16 ">
           <DynamicTitlesWhite :title="title"/>
         </div>
@@ -63,5 +63,17 @@ margin-right: 0px;
   padding-top: 25px;
 }
  
+}
+
+@media screen and (max-width: 902px) {
+
+  .text-long-term-journey{
+  width: 100%;
+}
+
+.pt-12{
+  padding-top: 0px;
+}
+
 }
 </style>
